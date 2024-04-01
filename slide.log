@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3) (preloaded format=xelatex 2024.3.25)  1 APR 2024 22:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3) (preloaded format=xelatex 2024.3.25)  1 APR 2024 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1811,12 +1811,12 @@ Package logreq Info: Writing requests to 'slide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57038 strings out of 409555
- 1370809 string characters out of 5772403
- 2449374 words of memory out of 5000000
- 78240 multiletter control sequences out of 15000+600000
+ 57040 strings out of 409555
+ 1370884 string characters out of 5772403
+ 2449420 words of memory out of 5000000
+ 78242 multiletter control sequences out of 15000+600000
  624094 words of font info for 129 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,19n,123p,1388b,5498s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on slide.xdv (27 pages, 806844 bytes).
+Output written on slide.xdv (27 pages, 808396 bytes).

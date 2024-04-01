@@ -52,6 +52,30 @@
       \field{pages}{1207\bibrangedash 1224}
       \range{pages}{18}
     \endentry
+    \entry{strang2016introduction}{book}{}
+      \name{author}{1}{}{%
+        {{hash=93733dfde0c47db226efad798ab3b662}{%
+           family={Strang},
+           familyi={S\bibinitperiod},
+           given={Gilbert},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{93733dfde0c47db226efad798ab3b662}
+      \strng{fullhash}{93733dfde0c47db226efad798ab3b662}
+      \strng{bibnamehash}{93733dfde0c47db226efad798ab3b662}
+      \strng{authorbibnamehash}{93733dfde0c47db226efad798ab3b662}
+      \strng{authornamehash}{93733dfde0c47db226efad798ab3b662}
+      \strng{authorfullhash}{93733dfde0c47db226efad798ab3b662}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to linear algebra (fifth edition)}
+      \field{year}{2016}
+    \endentry
     \entry{joseph2015text}{article}{}
       \name{author}{2}{}{%
         {{hash=f944d040b2c492f84da11beb82196e03}{%
@@ -71,8 +95,8 @@
       \strng{authorbibnamehash}{36ab71931e48b94c6ff4a02747f61ea4}
       \strng{authornamehash}{36ab71931e48b94c6ff4a02747f61ea4}
       \strng{authorfullhash}{36ab71931e48b94c6ff4a02747f61ea4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Int J Trends Eng Technol}
@@ -104,8 +128,8 @@
       \strng{authorbibnamehash}{4398a4ee6080e5df33efdacb9bab2def}
       \strng{authornamehash}{4398a4ee6080e5df33efdacb9bab2def}
       \strng{authorfullhash}{4398a4ee6080e5df33efdacb9bab2def}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Artificial Intelligence and Soft Computing}
@@ -128,8 +152,8 @@
       \strng{authorbibnamehash}{840b19066458a44c97a4b7a5c5fd44fc}
       \strng{authornamehash}{840b19066458a44c97a4b7a5c5fd44fc}
       \strng{authorfullhash}{840b19066458a44c97a4b7a5c5fd44fc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of advanced research in computer and communication engineering}
@@ -154,8 +178,8 @@
       \strng{authorbibnamehash}{79b2edae2c1f138296cac99e0ab25396}
       \strng{authornamehash}{79b2edae2c1f138296cac99e0ab25396}
       \strng{authorfullhash}{79b2edae2c1f138296cac99e0ab25396}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. the International Conference on Neural Information Processing}
@@ -183,8 +207,8 @@
       \strng{authorbibnamehash}{baa0b21391755861029df55ff4c7870c}
       \strng{authornamehash}{baa0b21391755861029df55ff4c7870c}
       \strng{authorfullhash}{baa0b21391755861029df55ff4c7870c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Improving multiclass text classification with the support vector machine}
@@ -207,8 +231,8 @@
       \strng{authorbibnamehash}{83f4643381c1cc2c483b4210498fedb0}
       \strng{authornamehash}{83f4643381c1cc2c483b4210498fedb0}
       \strng{authorfullhash}{83f4643381c1cc2c483b4210498fedb0}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the seventh IEEE international conference on computer vision}
@@ -237,8 +261,8 @@
       \strng{authorbibnamehash}{8316a8a4748fedae6ff9c5414cecc95a}
       \strng{authornamehash}{8316a8a4748fedae6ff9c5414cecc95a}
       \strng{authorfullhash}{8316a8a4748fedae6ff9c5414cecc95a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}
@@ -281,8 +305,8 @@
       \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authornamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0001-0782}
@@ -358,8 +382,8 @@
       \strng{authorbibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authorfullhash}{64fbaf3c8a6b53523f74f0087b58e7e6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -400,8 +424,8 @@
       \strng{authorbibnamehash}{17655fbc1635433f7a15071bd7d5373e}
       \strng{authornamehash}{17655fbc1635433f7a15071bd7d5373e}
       \strng{authorfullhash}{0a478dcd11cc3c66908dd5625104def1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Intelligent Data Analysis}
@@ -788,8 +812,8 @@
       \strng{authorbibnamehash}{7feb3af4a8a81b83edd24447b7f29c3b}
       \strng{authornamehash}{7feb3af4a8a81b83edd24447b7f29c3b}
       \strng{authorfullhash}{7feb3af4a8a81b83edd24447b7f29c3b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Anomaly detection describes methods of finding abnormal states, instances or data points that differ from a normal value space. Industrial processes are a domain where predicitve models are needed for finding anomalous data instances for quality enhancement. A main challenge, however, is absence of labels in this environment. This paper contributes to a data-centric way of approaching artificial intelligence in industrial production. With a use case from additive manufacturing for automotive components we present a deep-learning-based image processing pipeline. Additionally, we integrate the concept of domain randomisation and synthetic data in the loop that shows promising results for bridging advances in deep learning and its application to real-world, industrial production processes}
@@ -820,8 +844,8 @@
       \strng{authorbibnamehash}{49ee06b41b4005818af5490b2e409e12}
       \strng{authornamehash}{49ee06b41b4005818af5490b2e409e12}
       \strng{authorfullhash}{49ee06b41b4005818af5490b2e409e12}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Detecting cybersecurity insider threat has become progressively challenging, as an over saturation of data has made it increasingly difficult to parse and consume information. In the past intrusion detection systems (IDS) were used to identify anomalies and potential misuse. However, IDSs do not specialize in the identification of anomalous activities. Thus, the development of anomaly detection systems (ADS) tailored toward the identification of deviations in behaviors is more sufficient. Though the use of anomaly detection systems have grown within cybersecurity, cybersecurity analysts face the problematic task of focusing on the right information in order to identify potentially malicious insider threats. In this paper, we will provide empirical evidence toward the identification and validation of cybersecurity vital signs that will aid cybersecurity analysts with triage for potentially malicious insider threats. A comparison of IDS and anomaly detection systems will be presented to depict the importance of separating anomaly detection from intrusion detection systems. We will also present the development of a prototype focused on effectively visualizing cybersecurity vital signs.}
