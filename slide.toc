@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@sectionintoc {2}{A Two-Dimensional Example}{11}{0}{2}
+\beamer@sectionintoc {3}{监督学习}{12}{0}{3}

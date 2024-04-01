@@ -1,0 +1,898 @@
+@inproceedings{9789938,
+  author    = {Johari, Seyed Soheil and Shahriar, Nashid and Tornatore, Massimo and Boutaba, Raouf and Saleh, Aladdin},
+  booktitle = {NOMS 2022-2022 IEEE/IFIP Network Operations and Management Symposium},
+  title     = {Anomaly Detection and Localization in NFV Systems: an Unsupervised Learning Approach},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {1-9},
+  abstract  = {Due to the scarcity of labeled faulty data, Unsupervised Learning (UL) methods have gained great traction for anomaly detection and localization in Network Functions Virtualization (NFV) systems. In a UL approach, training is performed on only normal data for learning normal data patterns, and deviation from the norm is considered as an anomaly. However, it has been shown that even small percentages of anomalous samples in the training data (referred to as contamination) can significantly degrade the performance of UL methods. To address this issue, we propose an anomaly-detection approach based on the Noisy-Student technique, which was originally introduced for leveraging unlabeled datasets in computer-vision classification problems. Our approach not only provides robustness against training-data contamination, but also can leverage this contamination to improve anomaly-detection accuracy. Moreover, after an anomaly is detected, localization of the anomalous virtualized network functions in an unsupervised manner is a challenging task in the absence of labeled data. For anomaly localization in NFV systems, we propose to exploit existing local AI-explainability methods to achieve a high localization performance and propose our own novel AI-explainability method, specifically designed for the anomaly-localization problem in NFV, to improve the performance further. We perform a comprehensive experimental analysis on two datasets collected on different NFV testbeds and show that our proposed solutions outperform the existing methods by up to 22% in anomaly detection and up to 19% in anomaly localization in terms of F1-score.},
+  keywords  = {},
+  doi       = {10.1109/NOMS54207.2022.9789938},
+  issn      = {2374-9709},
+  month     = {April}
+}
+
+@misc{saase2020simple,
+  title         = {Simple statistical methods for unsupervised brain anomaly detection on MRI are competitive to deep learning methods},
+  author        = {Victor Saase and Holger Wenz and Thomas Ganslandt and Christoph Groden and Máté E. Maros},
+  year          = {2020},
+  eprint        = {2011.12735},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV},
+  abstract      = {Statistical analysis of magnetic resonance imaging (MRI) can help radiologists to detect pathologies that are otherwise likely to be missed. Deep learning (DL) has shown promise in modeling complex spatial data for brain anomaly detection. However, DL models have major deficiencies: they need large amounts of high-quality training data, are difficult to design and train and are sensitive to subtle changes in scanning protocols and hardware. Here, we show that also simple statistical methods such as voxel-wise (baseline and covariance) models and a linear projection method using spatial patterns can achieve DL-equivalent (3D convolutional autoencoder) performance in unsupervised pathology detection. All methods were trained (N=395) and compared (N=44) on a novel, expert-curated multiparametric (8 sequences) head MRI dataset of healthy and pathological cases, respectively. We show that these simple methods can be more accurate in detecting small lesions and are considerably easier to train and comprehend. The methods were quantitatively compared using AUC and average precision and evaluated qualitatively on clinical use cases comprising brain atrophy, tumors (small metastases) and movement artefacts. Our results demonstrate that while DL methods may be useful, they should show a sufficiently large performance improvement over simpler methods to justify their usage. Thus, simple statistical methods should provide the baseline for benchmarks.}
+}
+
+@inproceedings{10.1145/3534678.3539100,
+  author    = {Chen, Tianyi and Tsourakakis, Charalampos},
+  title     = {AntiBenford Subgraphs: Unsupervised Anomaly Detection in Financial Networks},
+  year      = {2022},
+  isbn      = {9781450393850},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3534678.3539100},
+  doi       = {10.1145/3534678.3539100},
+  abstract  = {Benford's law describes the distribution of the first digit of numbers appearing in a wide variety of numerical data, including tax records, and election outcomes, and has been used to raise "red flags" about potential anomalies in the data such as tax evasion. In this work, we ask the following novel question:Given a large transaction or financial graph, how do we find a set of nodes that perform many transactions among each other that also deviate significantly from Benford's law?We propose the AntiBenford subgraph framework that is founded on well-established statistical principles. Furthermore, we design an efficient algorithm that finds AntiBenford subgraphs in near-linear time on real data. We evaluate our framework on both real and synthetic data against a variety of competitors. We show empirically that our proposed framework enables the detection of anomalous subgraphs in cryptocurrency transaction networks that go undetected by state-of-the-art graph-based anomaly detection methods. Our empirical findings show that our AntiBenford framework is able to mine anomalous subgraphs, and provide novel insights into financial transaction data.The code and the datasets are available at https://github.com/tsourakakis-lab/antibenford-subgraphs.},
+  booktitle = {Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages     = {2762–2770},
+  numpages  = {9},
+  keywords  = {financial networks, dense subgraph, anomaly detection},
+  location  = {Washington DC, USA},
+  series    = {KDD '22}
+}
+
+
+
+@proceedings{10.1115/IMECE2022-94486,
+  author   = {Chen, Alvin and Kopsaftopoulos, Fotis and Mishra, Sandipan},
+  title    = {{Unsupervised Online Anomaly Detection of Metal Additive Manufacturing Processes via a Statistical Time-Frequency Domain Approach}},
+  volume   = {Volume 1: Acoustics, Vibration, and Phononics},
+  series   = {ASME International Mechanical Engineering Congress and Exposition},
+  pages    = {V001T01A007},
+  year     = {2022},
+  month    = {10},
+  abstract = {{Fault detection techniques in metal additive manufacturing (AM) have explored a variety of monitoring methods to flag anomalies as they occur during the sintering process. Although many in-situ techniques are able to adeptly detect these abnormalities, several utilize machine learning black box methods that do not easily transfer to varying print geometries. An approach that is adaptable to a multitude of geometries holds an advantage in determining anomalies for more complex cross-sections and raster patterns. To address this lack of a geometry agnosticism, we propose a method that detects faults using the frequency content of the melt pool image response through an unsupervised approach. Scan line length and scan speed extracted from known geometry can be translated to associated frequencies via a spectrogram. We examine three specific geometries to determine detection performance on each by comparing the frequency content to the nominal response. A deviation from the expected performance will signify that an anomaly has occurred. We verify this approach is feasible for fault detection and is accurate in detecting anomalies that are hard to observe in the image time series. A feasible geometry agnostic method and the current interpretability will be discussed in this paper. The results reached in this paper strongly indicate that the approach is promising, has potential for improvement, and that a geometrically independent method is sensible. With further work, a generic algorithm applicable on any geometry will be achievable.}},
+  doi      = {10.1115/IMECE2022-94486},
+  url      = {https://doi.org/10.1115/IMECE2022-94486},
+  eprint   = {https://asmedigitalcollection.asme.org/IMECE/proceedings-pdf/IMECE2022/86625/V001T01A007/6980414/v001t01a007-imece2022-94486.pdf}
+}
+
+
+@article{Elhalwagy_2022,
+  title     = {Multi-Channel LSTM-Capsule Autoencoder Network for Anomaly Detection on Multivariate Data},
+  volume    = {12},
+  issn      = {2076-3417},
+  url       = {http://dx.doi.org/10.3390/app122211393},
+  doi       = {10.3390/app122211393},
+  number    = {22},
+  journal   = {Applied Sciences},
+  publisher = {MDPI AG},
+  author    = {Elhalwagy, Ayman and Kalganova, Tatiana},
+  year      = {2022},
+  month     = nov,
+  pages     = {11393},
+  abstract  = {Deep learning techniques have recently shown promise in the field of anomaly detection, providing a flexible and effective method of modelling systems in comparison to traditional statistical modelling and signal processing-based methods. However, there are a few well publicised issues Neural Networks (NN)s face such as generalisation ability, requiring large volumes of labelled data to be able to train effectively and understanding spatial context in data. This paper introduces a novel NN architecture which hybridises the Long-Short-Term-Memory (LSTM) and Capsule Networks into a single network in a branched input Autoencoder architecture for use on multivariate time series data. The proposed method uses an unsupervised learning technique to overcome the issues with finding large volumes of labelled training data. Experimental results show that without hyperparameter optimisation, using Capsules significantly reduces overfitting and improves the training efficiency. Additionally, results also show that the branched input models can learn multivariate data more consistently with or without Capsules in comparison to the non-branched input models. The proposed model architecture was also tested on an open-source benchmark, where it achieved state-of-the-art performance in outlier detection, and overall performs best over the metrics tested in comparison to current state-of-the art methods.}
+}
+
+
+@article{article1,
+  author   = {Sudha, K. and Suguna, N.},
+  year     = {2019},
+  month    = {07},
+  pages    = {1080-1085},
+  title    = {Evaluation of Unsupervised Anomaly Detection Methods in Sentiment Mining},
+  volume   = {8},
+  journal  = {International Journal of Innovative Technology and Exploring Engineering},
+  doi      = {10.35940/ijitee.I8012.078919},
+  abstract = {Anomaly detection has vital role in data preprocessing and also in the mining of outstanding points for marketing, network sensors, fraud detection, intrusion detection, stock market analysis. Recent studies have been found to concentrate more on outlier detection for real time datasets. Anomaly detection study is at present focuses on the expansion of innovative machine learning methods and on enhancing the computation time. Sentiment mining is the process to discover how people feel about a particular topic. Though many anomaly detection techniques have been proposed, it is also notable that the research focus lacks a comparative performance evaluation in sentiment mining datasets. In this study, three popular unsupervised anomaly detection algorithms such as density based, statistical based and cluster based anomaly detection methods are evaluated on movie review sentiment mining dataset. This paper will set a base for anomaly detection methods in sentiment mining research. The results show that density based (LOF) anomaly detection method suits best for the movie review sentiment dataset.}
+}
+
+
+@article{Sarda2023UnsupervisedAD,
+  title    = {Unsupervised Anomaly Detection for Multivariate Incomplete Data using GAN-based Data Imputation: A Comparative Study},
+  author   = {Kisan Sarda and Amol Yerudkar and Carmen Del Vecchio},
+  journal  = {2023 31st Mediterranean Conference on Control and Automation (MED)},
+  year     = {2023},
+  pages    = {55-60},
+  url      = {https://api.semanticscholar.org/CorpusID:252889948},
+  abstract = {Anomaly detection (AD) has often remained a challenging problem in multivariate data analysis. The datasets generally contain missing values, thereby resulting in incorrect outcomes. Thus, it is not suitable to provide the dataset directly to diagnostic methods. Instead, one common practice is data imputation (DI), i.e., to replace the missing values with synthetic samples. This paper presents a comparative study to find a generalized AD method for datasets with missing values, called incomplete datasets. The proposed method is parted into two steps: i) DI to obtain complete datasets; ii) AD for complete datasets. Typically, statistical-based imputation methods replace the missing samples, but such methods do not consider the distribution of the data, and anomalous datasets generally are imbalanced datasets. Hence, we utilize generative adversarial networks (GANs) for generating the missing values. Capabilities of GAN-based DI are tested under various hyperparameter settings and the percentage of missing values. Further, we consider the AD problem, for which seven unsupervised anomaly detection (UAD) methods have been tested on six different types of datasets, including a real dataset from a steel manufacturing plant in the south of Italy. An exhaustive analysis is presented for each dataset to highlight which DI and AD method combination performs better. Finally, we conclude that the GAN imputed data delivers the best DI performance and the reweighted minimum covariance determinant (RMCD) furnishes the overall best AD results in tandem with GAN.}
+}
+
+
+@article{article2,
+  author   = {Ahmed, Imtiaz and Dagnino, Aldo and Ding, Yu},
+  year     = {2018},
+  month    = {07},
+  pages    = {1-14},
+  title    = {Unsupervised Anomaly Detection Based on Minimum Spanning Tree Approximated Distance Measures and Its Application to Hydropower Turbines},
+  volume   = {PP},
+  journal  = {IEEE Transactions on Automatarticle2ion Science and Engineering},
+  doi      = {10.1109/TASE.2018.2848198},
+  abstract = {Anomalies are data points or a cluster of data points that lie away from the neighboring points or clusters and are inconsistent with the overall pattern of the data. Anomaly detection techniques help distinguish the anomalous observations from the regular ones, and thus provide the basis for developing a standard performance guideline for process control. The process of identifying anomalies becomes complicated in the absence of labeled training data as in supervised learning. Moreover, Euclidean distance between two points is less likely able to reflect the intrinsic structural distance imposed by the underlying manifold structure. In this paper, the authors propose a minimum spanning tree (MST)-based anomaly detection method. The merit of the method is that an MST provides a new distance measure, capable of capturing the relative connectedness of data points/clusters in a complicated manifold, and could be a better (dis)similarity metric, than the simple Euclidean distance, to identify anomalies in unsupervised learning settings. The proposed method is compared with 13 popular anomaly detection methods on 20 benchmark data sets, demonstrating a considerable improvement in its ability of identifying anomalies. Furthermore, the MST-based anomaly detection is applied to the data set from a hydropower turbine and demonstrates remarkable detection competence.}
+}
+
+@misc{yu2021fastflow,
+  title         = {FastFlow: Unsupervised Anomaly Detection and Localization via 2D Normalizing Flows},
+  author        = {Jiawei Yu and Ye Zheng and Xiang Wang and Wei Li and Yushuang Wu and Rui Zhao and Liwei Wu},
+  year          = {2021},
+  eprint        = {2111.07677},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV}
+}
+
+@article{article3,
+  author   = {Liu, Zhiyu and Gao, Xin and Jia, Xin and Xue, Bing and Fu, Shiyuan and Li, Kangsheng and Huang, Xu and Huang, Zijian},
+  year     = {2022},
+  month    = {03},
+  pages    = {},
+  title    = {Correlation-based feature partition regression method for unsupervised anomaly detection},
+  volume   = {52},
+  journal  = {Applied Intelligence},
+  doi      = {10.1007/s10489-022-03247-3},
+  abstract = {Anomaly detection problem has been extensively studied in a variety of application domains, where the data tags are difficult to obtain. Most unsupervised algorithms rely on some notions such as distance and density to detect anomalies. However, the performance of such algorithms is easier to decrease as the dimension of the datasets increases. Some studies which use features as pseudo-labels for prediction detect anomalies according to the deviation value of the prediction model. Even so, the improvement of model performance is still restricted to ignoring the correlation between feature attributes. In this paper, we propose a correlation-based feature partition regression prediction method called CFPR, which can alleviate the adverse effects of dataset dimensions and irrelevant attributes on model performance to a certain extent. According to the correlation between the features, the high-dimensional datasets will be divided into multiple feature subspaces. In each subspace, the feature with the highest correlation coefficient will be conducted as a pseudo-label. After that, we use the remaining features as the prediction attributes to train a supervised regression prediction model. We can calculate the anomaly score of each sample in the subspace according to the difference between the regression prediction value and the true value of the pseudo-label. Furthermore, we define a weighting strategy based on the level of correlation in the subspace integration stage to obtain the final anomaly score ranking table. Extensive experiments on twenty-eight UCI public datasets show that the CFPR performs better than several state-of-art anomaly algorithms at the AUC metric.}
+}
+
+@inproceedings{lowe1999object,
+  title        = {Object recognition from local scale-invariant features},
+  author       = {Lowe, David G},
+  booktitle    = {Proceedings of the seventh IEEE international conference on computer vision},
+  volume       = {2},
+  pages        = {1150--1157},
+  year         = {1999},
+  organization = {Ieee}
+}
+
+@inproceedings{1467360,
+  author    = {Dalal, N. and Triggs, B.},
+  booktitle = {2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+  title     = {Histograms of oriented gradients for human detection},
+  year      = {2005},
+  volume    = {1},
+  number    = {},
+  pages     = {886-893 vol. 1},
+  doi       = {10.1109/CVPR.2005.177}
+}
+
+@article{van2020survey,
+  title     = {A survey on semi-supervised learning},
+  author    = {Van Engelen, Jesper E and Hoos, Holger H},
+  journal   = {Machine learning},
+  volume    = {109},
+  number    = {2},
+  pages     = {373--440},
+  year      = {2020},
+  publisher = {Springer}
+}
+
+@article{de2022network,
+  title     = {A network-based positive and unlabeled learning approach for fake news detection},
+  author    = {de Souza, Mariana Caravanti and Nogueira, Bruno Magalh{\~a}es and Rossi, Rafael Geraldeli and Marcacini, Ricardo Marcondes and Dos Santos, Brucce Neves and Rezende, Solange Oliveira},
+  journal   = {Machine learning},
+  volume    = {111},
+  number    = {10},
+  pages     = {3549--3592},
+  year      = {2022},
+  publisher = {Springer}
+}
+
+@article{carnevali2021graph,
+  title     = {A graph-based approach for positive and unlabeled learning},
+  author    = {Carnevali, Julio C{\'e}sar and Rossi, Rafael Geraldeli and Milios, Evangelos and de Andrade Lopes, Alneu},
+  journal   = {Information Sciences},
+  volume    = {580},
+  pages     = {655--672},
+  year      = {2021},
+  publisher = {Elsevier}
+}
+
+@inproceedings{yadav2019graph,
+  title        = {A graph construction study for graph-based semi-supervised learning: case study on unstructured text data},
+  author       = {Yadav, Sumedh and Kumar, Gautam and Kumar, Shivam},
+  booktitle    = {2019 IEEE International Conference on Big Data (Big Data)},
+  pages        = {6254--6256},
+  year         = {2019},
+  organization = {IEEE}
+}
+
+@inproceedings{bose2019semi,
+  title        = {Semi-supervised method using Gaussian random fields for boilerplate removal in web browsers},
+  author       = {Bose, Joy and Mukherjee, Sumanta},
+  booktitle    = {2019 IEEE 16th India Council international conference (INDICON)},
+  pages        = {1--4},
+  year         = {2019},
+  organization = {IEEE}
+}
+@article{stahlberg2019neural,
+  title   = {Neural Machine Translation: A Review and Survey},
+  author  = {Stahlberg, Felix},
+  journal = {arXiv preprint arXiv:1912.02047},
+  year    = {2019}
+}
+@article{conneau2017word,
+  title   = {Word translation without parallel data},
+  author  = {Conneau, Alexis and Lample, Guillaume and Ranzato, Marc'Aurelio and Denoyer, Ludovic and J{\'e}gou, Herv{\'e}},
+  journal = {arXiv preprint arXiv:1710.04087},
+  year    = {2017}
+}
+@article{lample2017unsupervised,
+  title   = {Unsupervised machine translation using monolingual corpora only},
+  author  = {Lample, Guillaume and Conneau, Alexis and Denoyer, Ludovic and Ranzato, Marc'Aurelio},
+  journal = {arXiv preprint arXiv:1711.00043},
+  year    = {2017}
+}
+@article{lample2019cross,
+  title   = {Cross-lingual language model pretraining},
+  author  = {Lample, Guillaume and Conneau, Alexis},
+  journal = {arXiv preprint arXiv:1901.07291},
+  year    = {2019}
+}
+@article{yu2021a2r2,
+  title     = {A2R2: robust unsupervised neural machine translation with adversarial attack and regularization on representations},
+  author    = {Yu, Heng and Luo, Haoran and Yi, Yuqi and Cheng, Fan},
+  journal   = {IEEE Access},
+  volume    = {9},
+  pages     = {19990--19998},
+  year      = {2021},
+  publisher = {IEEE}
+}
+@article{sun2021unsupervised,
+  title     = {Unsupervised neural machine translation for similar and distant language pairs: An empirical study},
+  author    = {Sun, Haipeng and Wang, Rui and Utiyama, Masao and Marie, Benjamin and Chen, Kehai and Sumita, Eiichiro and Zhao, Tiejun},
+  journal   = {ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)},
+  volume    = {20},
+  number    = {1},
+  pages     = {1--17},
+  year      = {2021},
+  publisher = {ACM New York, NY, USA}
+}
+@article{solyman2021synthetic,
+  title     = {Synthetic data with neural machine translation for automatic correction in arabic grammar},
+  author    = {Solyman, Aiman and Zhenyu, Wang and Qian, Tao and Elhag, Arafat Abdulgader Mohammed and Toseef, Muhammad and Aleibeid, Zeinab},
+  journal   = {Egyptian Informatics Journal},
+  volume    = {22},
+  number    = {3},
+  pages     = {303--315},
+  year      = {2021},
+  publisher = {Elsevier}
+}
+@article{duarte2023review,
+  title     = {A review of semi-supervised learning for text classification},
+  author    = {Duarte, Jos{\'e} Marcio and Berton, Lilian},
+  journal   = {Artificial Intelligence Review},
+  pages     = {1--69},
+  year      = {2023},
+  publisher = {Springer}
+}
+
+@article{9281286,
+  author   = {Lu, Shaowen},
+  journal  = {IEEE Access},
+  title    = {Segmentation Improved Label Propagation for Semi-Supervised Anomaly Detection in Fused Magnesia Furnace Process},
+  year     = {2020},
+  volume   = {8},
+  number   = {},
+  pages    = {219214-219222},
+  abstract = {This article introduces a semi-supervised solution to the practical task of identifying the semi-molten working condition for fused magnesium furnace. The classifier is trained under the semi-supervised learning framework using video data which are partially labeled, and it works on-line to classify the semi-molten working condition from the monitoring video of fused magnesium furnace. Firstly, a deep auto-encoder is used to extract features from the video. Next, the feature time series is segmented into subsequence through a bottom-up algorithm which maximizes the interior data correlation. Then, a graph based label propagation algorithm is employed to iteratively train a LSTM classifier using the subsequences as training samples and improve the accuracy of the LSTM classifier. The main contribution of this work is the novel segmentation algorithm for sequential data which can remarkably improve the classification accuracy. The advantages of the proposed method are demonstrated by experiments and comparative analysis based on industrial data.},
+  keywords = {},
+  doi      = {10.1109/ACCESS.2020.3042464},
+  issn     = {2169-3536},
+  month    = {}
+}
+
+@phdthesis{10.5555/2395831,
+  author    = {Valko, Michal},
+  advisor   = {Hauskrecht, Milos},
+  title     = {Adaptive Graph-Based Algorithms for Conditional Anomaly Detection and Semi-Supervised Learning},
+  year      = {2011},
+  isbn      = {9781267027573},
+  publisher = {University of Pittsburgh},
+  address   = {USA},
+  abstract  = {We develop graph-based methods for semi-supervised learning based on label propagation on a data similarity graph. When data is abundant or arrive in a stream, the problems of computation and data storage arise for any graph-based method. We propose a fast approximate online algorithm that solves for the harmonic solution on an approximate graph. We show, both empirically and theoretically, that good behavior can be achieved by collapsing nearby points into a set of local representative points that minimize distortion. Moreover, we regularize the harmonic solution to achieve better stability properties. We also present graph-based methods for detecting conditional anomalies and apply them to the identification of unusual clinical actions in hospitals. Our hypothesis is that patient-management actions that are unusual with respect to the past patients may be due to errors and that it is worthwhile to raise an alert if such a condition is encountered. Conditional anomaly detection extends standard unconditional anomaly framework but also faces new problems known as fringe and isolated points. We devise novel nonparametric graph-based methods to tackle these problems. Our methods rely on graph connectivity analysis and soft harmonic solution. Finally, we conduct an extensive human evaluation study of our conditional anomaly methods by 15 experts in critical care.},
+  note      = {AAI3485811}
+}
+@article{de2022network,
+  title     = {A network-based positive and unlabeled learning approach for fake news detection},
+  author    = {de Souza, Mariana Caravanti and Nogueira, Bruno Magalh{\~a}es and Rossi, Rafael Geraldeli and Marcacini, Ricardo Marcondes and Dos Santos, Brucce Neves and Rezende, Solange Oliveira},
+  journal   = {Machine learning},
+  volume    = {111},
+  number    = {10},
+  pages     = {3549--3592},
+  year      = {2022},
+  publisher = {Springer}
+}
+@inproceedings{bose2019semi,
+  title        = {Semi-supervised method using Gaussian random fields for boilerplate removal in web browsers},
+  author       = {Bose, Joy and Mukherjee, Sumanta},
+  booktitle    = {2019 IEEE 16th India Council international conference (INDICON)},
+  pages        = {1--4},
+  year         = {2019},
+  organization = {IEEE}
+}
+@inproceedings{gong2017learning,
+  title        = {Learning with inadequate and incorrect supervision},
+  author       = {Gong, Chen and Zhang, Hengmin and Yang, Jian and Tao, Dacheng},
+  booktitle    = {2017 IEEE international conference on data mining (ICDM)},
+  pages        = {889--894},
+  year         = {2017},
+  organization = {IEEE}
+}
+@inproceedings{widmann2017graph,
+  title     = {Graph-based semi-supervised learning for text classification},
+  author    = {Widmann, Natalie and Verberne, Suzan},
+  booktitle = {Proceedings of the ACM SIGIR international conference on theory of information retrieval},
+  pages     = {59--66},
+  year      = {2017}
+}
+@inproceedings{ganiz2016semi,
+  title        = {Semi-supervised learning using higher-order co-occurrence paths to overcome the complexity of data representation},
+  author       = {Ganiz, Murat Can},
+  booktitle    = {2016 IEEE international conference on systems, man, and cybernetics (SMC)},
+  pages        = {002242--002247},
+  year         = {2016},
+  organization = {IEEE}
+}
+@article{rossi2017using,
+  title     = {Using bipartite heterogeneous networks to speed up inductive semi-supervised learning and improve automatic text categorization},
+  author    = {Rossi, Rafael Geraldeli and de Andrade Lopes, Alneu and Rezende, Solange Oliveira},
+  journal   = {Knowledge-Based Systems},
+  volume    = {132},
+  pages     = {94--118},
+  year      = {2017},
+  publisher = {Elsevier}
+}
+@inproceedings{7966207,
+  author    = {Montague, Paul and Kim, Junae},
+  booktitle = {2017 International Joint Conference on Neural Networks (IJCNN)},
+  title     = {An efficient semi-supervised SVM for anomaly detection},
+  year      = {2017},
+  volume    = {},
+  number    = {},
+  pages     = {2843-2850},
+  keywords  = {},
+  doi       = {10.1109/IJCNN.2017.7966207},
+  issn      = {2161-4407},
+  month     = {05}
+}
+
+@article{zhu2018sample,
+  title     = {A sample extension method based on Wikipedia and its application in text classification},
+  author    = {Zhu, Wenhao and Liu, Yiting and Hu, Guannan and Ni, Jianyue and Lu, Zhiguo},
+  journal   = {Wireless Personal Communications},
+  volume    = {102},
+  pages     = {3851--3867},
+  year      = {2018},
+  publisher = {Springer}
+}
+@article{zhang2019semi,
+  title     = {Semi supervised classification of scientific and technical literature based on semi supervised hierarchical description of improved latent dirichlet allocation (LDA)},
+  author    = {Zhang, Yongjun and Ma, Jialin and Wang, Zijian},
+  journal   = {Cluster Computing},
+  volume    = {22},
+  pages     = {6881--6889},
+  year      = {2019},
+  publisher = {Springer}
+}
+@inproceedings{benamira2019semi,
+  title     = {Semi-supervised learning and graph neural networks for fake news detection},
+  author    = {Benamira, Adrien and Devillers, Benjamin and Lesot, Etienne and Ray, Ayush K and Saadi, Manal and Malliaros, Fragkiskos D},
+  booktitle = {Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining},
+  pages     = {568--569},
+  year      = {2019}
+}
+@inproceedings{abdali2021semi,
+  title        = {Semi-supervised Multi-aspect Detection of Misinformation Using Hi erarchical Jo int D ecomposition},
+  author       = {Abdali, Sara and Shah, Neil and Papalexakis, Evangelos E},
+  booktitle    = {Machine Learning and Knowledge Discovery in Databases. Applied Data Science and Demo Track: European Conference, ECML PKDD 2020, Ghent, Belgium, September 14--18, 2020, Proceedings, Part V},
+  pages        = {406--422},
+  year         = {2021},
+  organization = {Springer}
+}
+@article{ji2021reliable,
+  title     = {Reliable event detection via multiple edge computing on streaming traffic social data},
+  author    = {Ji, Yipeng and Wang, Jingyi and Niu, Yan and Ma, Hongyuan},
+  journal   = {IEEE Access},
+  year      = {2021},
+  publisher = {IEEE}
+}
+@article{zhao2022graph,
+  title     = {Graph convolutional network based on multi-head pooling for short text classification},
+  author    = {Zhao, Hongyu and Xie, Jiazhi and Wang, Hongbin},
+  journal   = {IEEE Access},
+  volume    = {10},
+  pages     = {11947--11956},
+  year      = {2022},
+  publisher = {IEEE}
+}
+@article{sun2019non,
+  title     = {Non-negative matrix factorization based modeling and training algorithm for multi-label learning},
+  author    = {Sun, Liang and Ge, Hongwei and Kang, Wenjing},
+  journal   = {Frontiers of Computer Science},
+  volume    = {13},
+  pages     = {1243--1254},
+  year      = {2019},
+  publisher = {Springer}
+}
+@inproceedings{ju2022kgnn,
+  title     = {Kgnn: Harnessing kernel-based networks for semi-supervised graph classification},
+  author    = {Ju, Wei and Yang, Junwei and Qu, Meng and Song, Weiping and Shen, Jianhao and Zhang, Ming},
+  booktitle = {Proceedings of the fifteenth ACM international conference on web search and data mining},
+  pages     = {421--429},
+  year      = {2022}
+}
+@inproceedings{billal2017semi,
+  title        = {Semi-supervised learning and social media text analysis towards multi-labeling categorization},
+  author       = {Billal, Belainine and Fonseca, Alexsandro and Sadat, Fatiha and Lounis, Hakim},
+  booktitle    = {2017 IEEE international conference on big data (Big Data)},
+  pages        = {1907--1916},
+  year         = {2017},
+  organization = {IEEE}
+}
+@inproceedings{liu2018hierarchical,
+  title        = {Hierarchical attention based semi-supervised network representation learning},
+  author       = {Liu, Jie and Deng, Junyi and Xu, Guanghui and He, Zhicheng},
+  booktitle    = {Natural Language Processing and Chinese Computing: 7th CCF International Conference, NLPCC 2018, Hohhot, China, August 26--30, 2018, Proceedings, Part I 7},
+  pages        = {237--249},
+  year         = {2018},
+  organization = {Springer}
+}
+@article{zhu2021pre,
+  title     = {Pre-train and learn: Preserving global information for graph neural networks},
+  author    = {Zhu, Dan-Hao and Dai, Xin-Yu and Chen, Jia-Jun},
+  journal   = {Journal of Computer Science and Technology},
+  volume    = {36},
+  pages     = {1420--1430},
+  year      = {2021},
+  publisher = {Springer}
+}
+@article{yang2022simplified,
+  title     = {Simplified multilayer graph convolutional networks with dropout},
+  author    = {Yang, Fei and Zhang, Huyin and Tao, Shiming},
+  journal   = {Applied Intelligence},
+  pages     = {1--16},
+  year      = {2022},
+  publisher = {Springer}
+}
+@article{liu2022evaluation,
+  title     = {Evaluation of the Accuracy of Artificial Intelligence Translation Based on Deep Learning},
+  author    = {Liu, Xiaojing and others},
+  journal   = {Mobile Information Systems},
+  volume    = {2022},
+  year      = {2022},
+  publisher = {Hindawi}
+}
+@inproceedings{xu2020label,
+  title     = {Label-consistency based graph neural networks for semi-supervised node classification},
+  author    = {Xu, Bingbing and Huang, Junjie and Hou, Liang and Shen, Huawei and Gao, Jinhua and Cheng, Xueqi},
+  booktitle = {Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval},
+  pages     = {1897--1900},
+  year      = {2020}
+}
+@inproceedings{akujuobi2020recurrent,
+  title     = {Recurrent attention walk for semi-supervised classification},
+  author    = {Akujuobi, Uchenna and Zhang, Qiannan and Yufei, Han and Zhang, Xiangliang},
+  booktitle = {Proceedings of the 13th International Conference on Web Search and Data Mining},
+  pages     = {16--24},
+  year      = {2020}
+}
+@inproceedings{huang2021semi,
+  title        = {Semi-supervised text classification based on graph attention neural networks},
+  author       = {Huang, Jian and Tao, Nana and Chen, Hui and Deng, Qingshan and Wang, Wei and Wang, Jing},
+  booktitle    = {2021 4th International conference on artificial intelligence and big data (ICAIBD)},
+  pages        = {325--330},
+  year         = {2021},
+  organization = {IEEE}
+}
+@inproceedings{wang2021deep,
+  title        = {Deep semi-supervised learning via dynamic anchor graph embedding learning},
+  author       = {Wang, Zihao and Tu, Enmei and Lee, Zhicheng},
+  booktitle    = {2021 International joint conference on neural networks (IJCNN)},
+  pages        = {1--8},
+  year         = {2021},
+  organization = {IEEE}
+}
+@inproceedings{timsina2016using,
+  title        = {Using semi-supervised learning for the creation of medical systematic review: An exploratory analysis},
+  author       = {Timsina, Prem and Liu, Jun and El-Gayar, Omar and Shang, Yanyan},
+  booktitle    = {2016 49th Hawaii international conference on system sciences (HICSS)},
+  pages        = {1195--1203},
+  year         = {2016},
+  organization = {IEEE}
+}
+@article{kontonatsios2017semi,
+  title     = {A semi-supervised approach using label propagation to support citation screening},
+  author    = {Kontonatsios, Georgios and Brockmeier, Austin J and Przyby{\l}a, Piotr and McNaught, John and Mu, Tingting and Goulermas, John Y and Ananiadou, Sophia},
+  journal   = {Journal of biomedical informatics},
+  volume    = {72},
+  pages     = {67--76},
+  year      = {2017},
+  publisher = {Elsevier}
+}
+@article{8727990,
+  author   = {Bian, Jiang and Hui, Xiaolong and Sun, Shiying and Zhao, Xiaoguang and Tan, Min},
+  journal  = {IEEE Access},
+  title    = {A Novel and Efficient CVAE-GAN-Based Approach With Informative Manifold for Semi-Supervised Anomaly Detection},
+  year     = {2019},
+  volume   = {7},
+  number   = {},
+  pages    = {88903-88916},
+  abstract = {Semi-supervised anomaly detection identifies abnormal (testing) observations which are different from normal (training) observations. In many practical situations, anomalies are poorly insufficient and not well defined, while the normal data are easily sampled, have a wide variety, and may not be classified. For this paradigm, we propose a novel end-to-end deep network as an anomaly detector only trained on normal samples. Our architecture consists of a conditional variational auto-encoder (CVAE), a feature discriminator (FD), and an adversarially trained WGAN-GP discriminator. The CVAE is designed as a generator to reconstruct images. It leverages underlying category information and multivariate Gaussian distributions to regularize the latent space, enabling a smooth and informative manifold. For anomalies which have a certain similarity to normal data, we perform active negative training by generating potential outliers from the latent space to limit network generative capability. In order to capture data characteristics, we maximize the mutual information between the inputs and the latent codes by the FD. It enhances the relationship between the high-dimensional image space and corresponding encoded vectors. To promote reconstruction, a structural similarity loss is applied to robustly recover local texture details and the WGAN-GP discriminator is employed to aid in generating photo-realistic images. We distinguish anomalies by computing a reconstruction-based anomaly score. Different from recent encoder-decoder or GAN-based architectures, our approach considers input categories, constructs, and exploits a useful manifold in an unsupervised manner and has a stronger reconstruction capability. The experimental results demonstrate that the proposed approach outperforms state-of-the-art methods over several benchmark datasets.},
+  keywords = {},
+  doi      = {10.1109/ACCESS.2019.2920251},
+  issn     = {2169-3536},
+  month    = {}
+}
+
+@inproceedings{10.1145/3529466.3529470,
+  author    = {Shangguan, Weimin and Fan, Wentao and Chen, Ziyi},
+  title     = {Semi-Supervised Anomaly Detection Based on Deep Generative Models with Transformer},
+  year      = {2022},
+  isbn      = {9781450395502},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3529466.3529470},
+  doi       = {10.1145/3529466.3529470},
+  abstract  = {In this work, we propose a novel semi-supervised anomaly detection approach based on deep generative models with Transformers for identifying unusual (abnormal) images from normal ones. Our approach is based on the combination of autoencoder (AE) and generative adversarial networks (GAN). Similar to the vanilla GAN, our model is mainly composed of the generator and discriminator. The generator adopts an encoder-decoderencoder structure to extract meaningful latent representations, in which each encoder is constructed by a Transformer whereas the decoder is realized through the transposed convolution. The discriminator, which is built upon another Transformer, is used to distinguish whether the given image comes from the generator or the training set, while optimizing the encoder in the generator for better latent representations through adversarial training. The distribution of the normal data can be learned by minimizing the gap between the original image space and the latent image space during the training process. The abnormal images are detected if their distributions are different from the learned normal distributions. The merits of the proposed anomaly detection approach are demonstrated by comparing it with other generative anomaly detection approaches through experiments on three benchmark image data sets.},
+  booktitle = {Proceedings of the 2022 6th International Conference on Innovation in Artificial Intelligence},
+  pages     = {172–177},
+  numpages  = {6},
+  keywords  = {GAN, Transformer, Anomaly detection, generative model},
+  location  = {Guangzhou, China},
+  series    = {ICIAI '22}
+}
+
+@article{10.1145/3065386,
+  author     = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+  title      = {ImageNet Classification with Deep Convolutional Neural Networks},
+  year       = {2017},
+  issue_date = {June 2017},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {60},
+  number     = {6},
+  issn       = {0001-0782},
+  url        = {https://doi.org/10.1145/3065386},
+  doi        = {10.1145/3065386},
+  journal    = {Commun. ACM},
+  month      = {05},
+  pages      = {84–90},
+  numpages   = {7}
+}
+
+@article{simonyan2014very,
+  title   = {Very deep convolutional networks for large-scale image recognition},
+  author  = {Simonyan, Karen and Zisserman, Andrew},
+  journal = {arXiv preprint arXiv:1409.1556},
+  year    = {2014}
+}
+
+@article{kadhim2019survey,
+  title     = {Survey on supervised machine learning techniques for automatic text classification},
+  author    = {Kadhim, Ammar Ismael},
+  journal   = {Artificial Intelligence Review},
+  volume    = {52},
+  number    = {1},
+  pages     = {273--292},
+  year      = {2019},
+  publisher = {Springer}
+}
+
+@inproceedings{szegedy2015going,
+  title     = {Going deeper with convolutions},
+  author    = {Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages     = {1--9},
+  year      = {2015}
+}
+
+@inproceedings{he2016deep,
+  title     = {Deep residual learning for image recognition},
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages     = {770--778},
+  year      = {2016}
+}
+@article{fakhrahmad2012new,
+  title     = {A new fuzzy rule-based classification system for word sense disambiguation},
+  author    = {Fakhrahmad, Seyed Mostafa and Rezapour, AR and Jahromi, M Zolghadri and Sadreddini, Mohammad Hadi},
+  journal   = {Intelligent Data Analysis},
+  volume    = {16},
+  number    = {4},
+  pages     = {633--648},
+  year      = {2012},
+  publisher = {IOS Press}
+}
+@article{chauhan2023rule,
+  title     = {Rule Based Fuzzy Computing Approach on Self-Supervised Sentiment Polarity Classification with Word Sense Disambiguation in Machine Translation for Hindi Language},
+  author    = {Chauhan, Shweta and Shet, Jayashree Premkumar and Beram, Shehab Mohamed and Jagota, Vishal and Dighriri, Mohammed and Ahmad, Mohd Wazih and Hossain, Md Shamim and Rizwan, Ali},
+  journal   = {ACM Transactions on Asian and Low-Resource Language Information Processing},
+  volume    = {22},
+  number    = {5},
+  pages     = {1--21},
+  year      = {2023},
+  publisher = {ACM New York, NY}
+}
+@article{CHAKRABORTY201168,
+  title    = {Bayesian semi-supervised learning with support vector machine},
+  journal  = {Statistical Methodology},
+  volume   = {8},
+  number   = {1},
+  pages    = {68-82},
+  year     = {2011},
+  note     = {Advances in Data Mining and Statistical Learning},
+  issn     = {1572-3127},
+  doi      = {https://doi.org/10.1016/j.stamet.2009.09.002},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1572312709000574},
+  author   = {Sounak Chakraborty},
+  keywords = {Bayesian prediction, Classification, Gene expression microarrays, Markov chain Monte Carlo, Semi-supervised learning, Support vector machine},
+  abstract = {This paper introduces a Bayesian semi-supervised support vector machine (Semi-BSVM) model for binary classification. Our semi-supervised learning has a distinct advantage over supervised or inductive learning since by design it reduces the problem of overfitting. While a traditional support vector machine (SVM) has the widest margin based on the labeled data only, our semi-supervised form of SVM attempts to find the widest margin in both the labeled and unlabeled data space. This enables us to use some information from the unlabeled data and improve the overall prediction performance. The likelihood is constructed using a special type of hinge loss function which also involves the unlabeled data. A penalty term is added for the likelihood part constructed from the unlabeled data. The parameters and penalties are controlled through nearly diffuse priors for objectivity of the analysis. The rate of learning from the unlabeled data is reflected through the posterior distribution of the penalty parameter from the unlabeled data. This formulation provides us with a control on how much information should be extracted from the unlabeled data without hurting the overall performance of our model. We have applied our model on three simulation data sets and five real life data sets. Our simulation study and real life data analysis show considerable improvement in prediction quality for our semi-supervised learning over supervised learning methods when we have a high learning rate from the unlabeled data. This phenomenon is particularly evident in cases when the amount of unlabeled data is very large compared to the available labeled data.}
+}
+@article{gonzalez2014cost,
+  title     = {Cost-sensitive active learning for computer-assisted translation},
+  author    = {Gonz{\'a}lez-Rubio, Jes{\'u}s and Casacuberta, Francisco},
+  journal   = {Pattern Recognition Letters},
+  volume    = {37},
+  pages     = {124--134},
+  year      = {2014},
+  publisher = {Elsevier}
+}
+@inproceedings{5206737,
+  author    = {Babenko, Boris and Yang, Ming-Hsuan and Belongie, Serge},
+  booktitle = {2009 IEEE Conference on Computer Vision and Pattern Recognition},
+  title     = {Visual tracking with online Multiple Instance Learning},
+  year      = {2009},
+  volume    = {},
+  number    = {},
+  pages     = {983-990},
+  abstract  = {In this paper, we address the problem of learning an adaptive appearance model for object tracking. In particular, a class of tracking techniques called “tracking by detection” have been shown to give promising results at real-time speeds. These methods train a discriminative classifier in an online manner to separate the object from the background. This classifier bootstraps itself by using the current tracker state to extract positive and negative examples from the current frame. Slight inaccuracies in the tracker can therefore lead to incorrectly labeled training examples, which degrades the classifier and can cause further drift. In this paper we show that using Multiple Instance Learning (MIL) instead of traditional supervised learning avoids these problems, and can therefore lead to a more robust tracker with fewer parameter tweaks. We present a novel online MIL algorithm for object tracking that achieves superior results with real-time performance.},
+  keywords  = {},
+  doi       = {10.1109/CVPR.2009.5206737},
+  issn      = {1063-6919},
+  month     = {06}
+}
+@article{zhang2021study,
+  title     = {A study on the intelligent translation model for English incorporating neural network migration learning},
+  author    = {Zhang, Yanbo},
+  journal   = {Wireless Communications and Mobile Computing},
+  volume    = {2021},
+  pages     = {1--10},
+  year      = {2021},
+  publisher = {Hindawi Limited}
+}
+@article{shi2022low,
+  title     = {Low-resource neural machine translation: Methods and trends},
+  author    = {Shi, Shumin and Wu, Xing and Su, Rihai and Huang, Heyan},
+  journal   = {ACM Transactions on Asian and Low-Resource Language Information Processing},
+  volume    = {21},
+  number    = {5},
+  pages     = {1--22},
+  year      = {2022},
+  publisher = {ACM New York, NY}
+}
+@misc{jafari2022deep,
+  title         = {A Deep Learning Anomaly Detection Method in Textual Data},
+  author        = {Amir Jafari},
+  year          = {2022},
+  eprint        = {2211.13900},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  abstract      = {In this article, we propose using deep learning and transformer architectures combined with classical machine learning algorithms to detect and identify text anomalies in texts. Deep learning model provides a very crucial context information about the textual data which all textual context are converted to a numerical representation. We used multiple machine learning methods such as Sentence Transformers, Auto Encoders, Logistic Regression and Distance calculation methods to predict anomalies. The method are tested on the texts data and we used syntactic data from different source injected into the original text as anomalies or use them as target. Different methods and algorithm are explained in the field of outlier detection and the results of the best technique is presented. These results suggest that our algorithm could potentially reduce false positive rates compared with other anomaly detection methods that we are testing.}
+}
+@article{razaq2023improving,
+  title     = {Improving paraphrase generation using supervised neural-based statistical machine translation framework},
+  author    = {Razaq, Abdur and Shah, Babar and Khan, Gohar and Alfandi, Omar and Ullah, Abrar and Halim, Zahid and Ur Rahman, Atta},
+  journal   = {Neural Computing and Applications},
+  pages     = {1--15},
+  year      = {2023},
+  publisher = {Springer}
+}
+@inproceedings{DBLP:conf/kdd/AnandakrishnanK17,
+  author    = {Archana Anandakrishnan and
+               Senthil Kumar and
+               Alexander R. Statnikov and
+               Tanveer A. Faruquie and
+               Di Xu},
+  editor    = {Archana Anandakrishnan and
+               Senthil Kumar and
+               Alexander R. Statnikov and
+               Tanveer A. Faruquie and
+               Di Xu},
+  title     = {Anomaly Detection in Finance: Editors' Introduction},
+  booktitle = {Proceedings of the {KDD} 2017 Workshop on Anomaly Detection in Finance,
+               ADF@KDD 2017, Halifax, Nova Scotia, Canada, August 14, 2017},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {71},
+  pages     = {1--7},
+  publisher = {{PMLR}},
+  year      = {2017},
+  url       = {http://proceedings.mlr.press/v71/anandakrishnan18a.html},
+  timestamp = {Wed, 03 Apr 2019 18:17:20 +0200},
+  biburl    = {https://dblp.org/rec/conf/kdd/AnandakrishnanK17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@misc{zeiser2022deep,
+  title         = {Deep Learning based pipeline for anomaly detection and quality enhancement in industrial binder jetting processes},
+  author        = {Alexander Zeiser and Bas van Stein and Thomas Bäck},
+  year          = {2022},
+  eprint        = {2209.10178},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abstract      = {Anomaly detection describes methods of finding abnormal states, instances or data points that differ from a normal value space. Industrial processes are a domain where predicitve models are needed for finding anomalous data instances for quality enhancement. A main challenge, however, is absence of labels in this environment. This paper contributes to a data-centric way of approaching artificial intelligence in industrial production. With a use case from additive manufacturing for automotive components we present a deep-learning-based image processing pipeline. Additionally, we integrate the concept of domain randomisation and synthetic data in the loop that shows promising results for bridging advances in deep learning and its application to real-world, industrial production processes}
+}
+@inproceedings{Clarke2019CybersecurityVS,
+  title    = {Cybersecurity Vital Signs : The Role of Anomaly Detection on Insider Threat Triage},
+  author   = {Karla Clarke and Yair Levy},
+  year     = {2019},
+  url      = {https://api.semanticscholar.org/CorpusID:197634071},
+  abstract = {Detecting cybersecurity insider threat has become progressively challenging, as an over saturation of data has made it increasingly difficult to parse and consume information. In the past intrusion detection systems (IDS) were used to identify anomalies and potential misuse. However, IDSs do not specialize in the identification of anomalous activities. Thus, the development of anomaly detection systems (ADS) tailored toward the identification of deviations in behaviors is more sufficient. Though the use of anomaly detection systems have grown within cybersecurity, cybersecurity analysts face the problematic task of focusing on the right information in order to identify potentially malicious insider threats. In this paper, we will provide empirical evidence toward the identification and validation of cybersecurity vital signs that will aid cybersecurity analysts with triage for potentially malicious insider threats. A comparison of IDS and anomaly detection systems will be presented to depict the importance of separating anomaly detection from intrusion detection systems. We will also present the development of a prototype focused on effectively visualizing cybersecurity vital signs.
+              }
+}
+@article{Medical_Healthcare,
+  author   = {Hassaballah, Hayder and Fayadh, Rashid and AlHayali, Bushra},
+  year     = {2020},
+  month    = {02},
+  pages    = {3039-3046},
+  title    = {Medical Healthcare System Based on Wireless Body Area Networks: The Importance of Anomaly Detection},
+  volume   = {9},
+  journal  = {International Journal of Engineering and Advanced Technology},
+  doi      = {10.35940/ijeat.C5945.029320},
+  abstract = {In this research paper, a modern framework is presented to detect anomaly in medical wireless body sensor network systems that are incorporated in distant observation of patient’s vital signs. The suggested framework effects analysis of data in a sequential manner using a mini gateway utilized as a root station to discover abnormal alterations and to deal with inaccurate computations in gathered medical information minus advance awareness of irregular occurrences or consistent data patterns. The suggested perspective relies on Principal Component Analysis (PCA) utilized in spatial analysis and dimension reduction for gathered medical details. The key goal is distinguishing defective calculations from clinical dangers for reduction of false alarms prompted by incorrect computations or ill-behaved sensors. The result from the experiments on real medical datasets reveal that the suggested PCA perspective is able to attain good discovery perfection with lesser falt alarm rate when contrasted with other perspectives that fail to minimize the excessive dimension of gathered more information so in multivariate Wireless Body Sensor Networks (WBSN) implementations, and dynamic streaming nature of sensor data, mostly in medical implementations.
+              }
+}
+@article{joseph2015text,
+  title   = {Text categorization using improved K nearest neighbor algorithm},
+  author  = {Joseph, Femi and Ramakrishnan, N},
+  journal = {Int J Trends Eng Technol},
+  volume  = {4},
+  pages   = {65--68},
+  year    = {2015}
+}
+@inproceedings{horecki2015natural,
+  title        = {Natural language processing methods used for automatic prediction mechanism of related phenomenon},
+  author       = {Horecki, Krystian and Mazurkiewicz, Jacek},
+  booktitle    = {International Conference on Artificial Intelligence and Soft Computing},
+  pages        = {13--24},
+  year         = {2015},
+  organization = {Springer}
+}
+@article{hu2018patent,
+  title     = {Patent keyword extraction algorithm based on distributed representation for patent classification},
+  author    = {Hu, Jie and Li, Shaobo and Yao, Yong and Yu, Liya and Yang, Guanci and Hu, Jianjun},
+  journal   = {Entropy},
+  volume    = {20},
+  number    = {2},
+  pages     = {104},
+  year      = {2018},
+  publisher = {MDPI}
+}
+@article{khamar2013short,
+  title   = {Short text classification using kNN based on distance function},
+  author  = {Khamar, Khushbu},
+  journal = {International Journal of advanced research in computer and communication engineering},
+  volume  = {2},
+  number  = {4},
+  pages   = {1916--1919},
+  year    = {2013}
+}
+@inproceedings{tin1999automated,
+  title     = {Automated text categorization using support vector machine},
+  author    = {Tin-Yau, Kwok James},
+  booktitle = {Proc. the International Conference on Neural Information Processing},
+  pages     = {347--351},
+  year      = {1999}
+}
+@article{rennie2001improving,
+  title  = {Improving multiclass text classification with the support vector machine},
+  author = {Rennie, Jason DM and Rifkin, Ryan},
+  year   = {2001}
+}
+@article{kumar2022tlspg,
+  title     = {TLSPG: Transfer learning-based semi-supervised pseudo-corpus generation approach for zero-shot translation},
+  author    = {Kumar, Amit and Mundotiya, Rajesh Kumar and Pratap, Ajay and Singh, Anil Kumar},
+  journal   = {Journal of King Saud University-Computer and Information Sciences},
+  volume    = {34},
+  number    = {9},
+  pages     = {6552--6563},
+  year      = {2022},
+  publisher = {Elsevier}
+}
+@inproceedings{koehn2007moses,
+  title        = {Moses: Open source toolkit for statistical machine translation},
+  author       = {Koehn, Philipp and Hoang, Hieu and Birch, Alexandra and Callison-Burch, Chris and Federico, Marcello and Bertoldi, Nicola and Cowan, Brooke and Shen, Wade and Moran, Christine and Zens, Richard and others},
+  booktitle    = {Proceedings of the 45th annual meeting of the association for computational linguistics companion volume proceedings of the demo and poster sessions},
+  pages        = {177--180},
+  year         = {2007},
+  organization = {Association for Computational Linguistics}
+}
+@article{singh2022low,
+  title     = {Low resource machine translation of english--manipuri: A semi-supervised approach},
+  author    = {Singh, Salam Michael and Singh, Thoudam Doren},
+  journal   = {Expert Systems with Applications},
+  volume    = {209},
+  pages     = {118187},
+  year      = {2022},
+  publisher = {Elsevier}
+}
+@article{chauhan2022analysis,
+  title     = {Analysis of neural machine translation KANGRI language by unsupervised and semi supervised methods},
+  author    = {Chauhan, Shweta and Saxena, Shefali and Daniel, Philemon},
+  journal   = {IETE Journal of Research},
+  pages     = {1--11},
+  year      = {2022},
+  publisher = {Taylor \& Francis}
+}
+
+@article{kingma2013auto,
+  title   = {Auto-encoding variational bayes},
+  author  = {Kingma, Diederik P and Welling, Max},
+  journal = {arXiv preprint arXiv:1312.6114},
+  year    = {2013}
+}
+
+@article{hinton2006reducing,
+  title     = {Reducing the dimensionality of data with neural networks},
+  author    = {Hinton, Geoffrey E and Salakhutdinov, Ruslan R},
+  journal   = {science},
+  volume    = {313},
+  number    = {5786},
+  pages     = {504--507},
+  year      = {2006},
+  publisher = {American Association for the Advancement of Science}
+}
+
+@article{goodfellow2014generative,
+  title   = {Generative adversarial nets},
+  author  = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal = {Advances in neural information processing systems},
+  volume  = {27},
+  year    = {2014}
+}
+
+@article{ohri2021review,
+  title     = {Review on self-supervised image recognition using deep neural networks},
+  author    = {Ohri, Kriti and Kumar, Mukesh},
+  journal   = {Knowledge-Based Systems},
+  volume    = {224},
+  pages     = {107090},
+  year      = {2021},
+  publisher = {Elsevier}
+}
+
+@inproceedings{xie2020self,
+  title     = {Self-training with noisy student improves imagenet classification},
+  author    = {Xie, Qizhe and Luong, Minh-Thang and Hovy, Eduard and Le, Quoc V},
+  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages     = {10687--10698},
+  year      = {2020}
+}
+
+@article{kipf2016semi,
+  title   = {Semi-supervised classification with graph convolutional networks},
+  author  = {Kipf, Thomas N and Welling, Max},
+  journal = {arXiv preprint arXiv:1609.02907},
+  year    = {2016}
+}
+
+@article{kingma2014semi,
+  title   = {Semi-supervised learning with deep generative models},
+  author  = {Kingma, Durk P and Mohamed, Shakir and Jimenez Rezende, Danilo and Welling, Max},
+  journal = {Advances in neural information processing systems},
+  volume  = {27},
+  year    = {2014}
+}
+
+@article{odena2016semi,
+  title   = {Semi-supervised learning with generative adversarial networks},
+  author  = {Odena, Augustus},
+  journal = {arXiv preprint arXiv:1606.01583},
+  year    = {2016}
+}
+
+@article{yin2014convergence,
+  title     = {Convergence rates of the spectral distributions of large random quaternion self-dual Hermitian matrices},
+  author    = {Yin, Yanqing and Bai, Zhidong},
+  journal   = {Journal of Statistical Physics},
+  volume    = {157},
+  pages     = {1207--1224},
+  year      = {2014},
+  publisher = {Springer}
+}
