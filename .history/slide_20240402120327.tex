@@ -1,0 +1,407 @@
+% !TEX TS-program = XeLaTex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[UTF8,AutoFakeBold,AutoFakeSlant]{beamer}
+\usepackage{ctex, hyperref}
+\usepackage[T1]{fontenc}
+
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{ref.bib} %BibTeX数据文件及位置
+\setbeamerfont{footnote}{size=\tiny} %调整注脚的文字大小
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage{pgfplots}
+\pgfplotsset{width=\textwidth,compat=1.9}
+\setCJKfamilyfont{myfont}{msyh.ttc}
+\newcommand{\MyFont}{\CJKfamily{myfont}}
+%\usepackage{auto-pst-pdf}
+%\usepackage[utf8]{inputenc}
+
+\author{\MyFont{Leyi Zhao}}
+\title{\MyFont{Separating Out the Eigenvalue Densities: Computing the Jacobians}}
+\subtitle{Random Matrix Theory with Its Applications}
+\institute{\MyFont{School of Cyberspace}}
+\date{\today}
+\usepackage{hdu}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+%%tips:
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+\definecolor{tipscolor}{rgb}{0.77,0.72,0.65} % 莫兰迪棕色
+\definecolor{OldLace}{rgb}{0.992156863, 0.9607843, 0.9019608}
+% ------------------******-------------------
+\newtcolorbox{tips}[2][]
+{enhanced,breakable,
+left=12pt,right=12pt,% 左右边距
+% fonttitle=\bfseries, % 可以设置标题是否粗体
+coltitle=white, % 标题字体颜色
+colbacktitle=tipscolor, % 标题背景颜色
+attach boxed title to top left={yshifttext=-1mm},
+boxed title style={skin=enhancedfirst jigsaw,arc=1mm,bottom=0mm,boxrule=0mm},
+boxrule=1pt, % 边框线宽
+colback=OldLace, % 文本框背景颜色
+colframe=tipscolor, % 框线颜色
+sharp corners=northwest,
+% drop fuzzy shadow, % 可以选择是否设置阴影效果
+title=\vspace{3mm}#2,
+arc=1mm,
+#1}
+%%
+
+
+\begin{document}
+
+%\kaishu
+\MyFont
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.18\linewidth]{img/hdu-logo.jpg} %插入学校的logo，支持多种格式
+        \end{center}
+    \end{figure}
+\end{frame}
+
+%  
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{Background}
+\begin{frame}{Spectral Theorem}
+    \begin{itemize}
+        \item The spectral theorem:
+              \begin{align*}
+                  M & = U \Lambda U^*  (unitary, symplectic) \\
+                  M & = U \Lambda U^T  (orthogonal)
+              \end{align*}
+              $M$ can be any kinds of matrices.
+        \item Three ensembles:\footfullcite{yin2014convergence}
+              \begin{itemize}
+                  \small
+                  \item \textbf{Gaussian Orthogonal Ensemble}: the set of $N \times N$ random \textcolor{red}{real} \textbf{symmetric} matrices
+                  \item \textbf{Gaussian Unitary Ensemble}: the set of $N \times N$ random \textcolor{red}{complex} \textbf{Hermitian} matrices
+                  \item \textbf{Gaussian Symplectic Ensemble}: the set of $N \times N$ random \textcolor{red}{quaternion}(四元数) \textbf{self-dual Hermitian} matrices
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Spectral Theorem}
+    \begin{itemize}
+        \item Every \textcolor{red}{real symmetric} matrix $Q$ with \textcolor{red}{real} eigenvalues in $\Lambda$ and orthonormal eigenvectors in the columns of $Q$(\textcolor{red}{orthogonal}(正交)) can be diagonalized:\footfullcite{strang2016introduction}
+              \begin{align*}
+                  S=Q\Lambda Q^{-1} = Q\Lambda Q^T \quad\text{with}\quad Q^{-1} = Q^T
+              \end{align*}
+        \item Every \textcolor{red}{Hermitian} matrix $S$ with \textcolor{red}{real} eigenvalues in $\Lambda$ and orthonormal eigenvectors in the columns of $U$(\textcolor{red}{unitary}(酉)) can be diagonalized:\footfullcite{strang2016introduction}
+              \begin{align*}
+                  S=U\Lambda U^{-1} = U\Lambda U^* \quad\text{with}\quad U^{-1} = U^*
+              \end{align*}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gaussian Orthogonal Ensemble(GOE)}
+    \begin{itemize}
+        \item \textbf{Gaussian Orthogonal Ensemble}: the set of $N \times N$ random \textcolor{red}{real} \textbf{symmetric} matrices
+        \item Symmetric matrix:
+              \begin{itemize}
+                  \item $S=S^T$
+                  \item $S=X\Lambda X^{-1}, S^T=(X^{-1})^T\Lambda X^T\quad \text{when}\quad S=S^T, X^TX=I$
+                  \item A symmetric matrix has only \emph{real eigenvalues}.
+                  \item Symmetric diagonalization: $S=Q\Lambda Q^{-1} = Q\Lambda Q^T \quad\text{with}\quad Q^{-1} = Q^T$
+                  \item Example: $\begin{bmatrix}
+                                a & b \\
+                                b & c
+                            \end{bmatrix}$
+                  \item Free variables number is $n+\frac{n(n-1)}{2}\cdot 1$
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gaussian Unitary Ensemble(GUE)}
+    \begin{itemize}
+        \item \textbf{Gaussian Unitary Ensemble}: the set of $N \times N$ random \textcolor{red}{complex} \textbf{Hermitian} matrices
+        \item Hermitian matrices:
+              \begin{itemize}
+                  \item $S=S^*$
+                  \item $S=U\Lambda U^{-1}, S^*=(U^{-1})^*\Lambda U^*\quad \text{when}\quad S=S^*, U^*U=I$
+                  \item Hermitian diagonalization: $S=U\Lambda U^{-1} = U\Lambda U^* \quad\text{with}\quad U^{-1} = U^*$
+                  \item Example: $\begin{bmatrix}
+                                a    & b+ci \\
+                                b-ci & d
+                            \end{bmatrix}$
+                  \item Free variables number is $n+\frac{n(n-1)}{2}\cdot 2$
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gaussian Symplectic Ensemble(GSE)}
+    \begin{itemize}
+        \item \textbf{Gaussian Symplectic Ensemble}: the set of $N \times N$ random \textcolor{red}{quaternion} \textbf{self-dual Hermitian} matrices\footfullcite{许方官2012四元数物理学} \footfullcite{yin2014convergence}
+        \item Quaternions were invented in 1843 by the Irish mathematician
+              William Rowen Hamilton as an extension of complex numbers into three dimensions\footfullcite{deavours1973quaternion} \footfullcite{hamilton1866elements}, and it's well known that the quaternion field $\mathbb{Q} $ can be represented as a two-dimensional
+              complex vector space\footfullcite{chevalley1946theory}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{四元数}
+    \begin{itemize}
+        \item 一个三位空间的实矢量$\mathbf{a}=a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}$与一个实数$a_0$组合成一个数$A=a_0+\mathbf{a}$被称为\textbf{四元数}。其中实数$a_0$被称为四元数$A$的\textbf{标部}，实矢量$\mathbf{a}$称为四元数$A$的矢部。
+        \item 在四元数$A$的矢部中，三个矢量$\mathbf{i},\mathbf{j},\mathbf{k}$是三维空间中三个互相垂直且方向固定的单位矢量。
+        \item 一个四元数实际上是由四个基$1,\mathbf{i},\mathbf{j},\mathbf{k}$的线性组合构成的。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{四元数代数运算规则}
+    \begin{itemize}
+        \item \textbf{相等}: 两个四元数$A$和$B$，若他们相应的四个分量分别相等，即
+              \begin{align*}
+                  a_n=b_n, \quad n=0,1,2,3
+              \end{align*}
+              则称他们\textbf{相等}，记作
+              \begin{align*}
+                  A=B
+              \end{align*}
+              一个四元数的等式相当于四个实数等式。
+        \item \textbf{加法}:两个四元数$A$和$B$之和$C$仍为四元数，记作
+              \begin{align*}
+                  C=A+B
+              \end{align*}
+              其定义为
+              \begin{align*}
+                  c_n=a_n+b_n,\quad n=0,1,2,3
+              \end{align*}
+              由实数加法的交换律、结合律知，四元数加法也存在着交换律和结合律。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{四元数代数运算规则}
+    \begin{itemize}
+        \small
+        \item \textbf{乘法}:两个四元数$A$和$B$乘积的定义是
+              \begin{align*}
+                  \begin{split}
+                      AB & =\left(a_0+\mathbf{a}\right)\left(b_0+\mathbf{b}\right)                                  \\
+                         & =a_0b_0-\mathbf{a}\cdot\mathbf{b}+a_0\mathbf{b}+b_0\mathbf{a}+\mathbf{a}\times\mathbf{b} \\
+                      BA & =\left(b_0+\mathbf{b}\right)\left(a_0+\mathbf{a}\right)                                  \\
+                         & =a_0b_0-\mathbf{a}\cdot\mathbf{b}+a_0\mathbf{b}+b_0\mathbf{a}+\mathbf{b}\times\mathbf{a}
+                  \end{split}
+              \end{align*}
+              两个四元数的乘积仍是四元数，但因为$\mathbf{a}\times\mathbf{b}\neq\mathbf{b}\times\mathbf{a}$，故$AB\neq BA$
+
+              四元数的乘法规则是由三个互相垂直的空间单位矢量$\mathbf{i},\mathbf{j},\mathbf{k}$之间的乘法(叉乘)规则
+              \begin{equation*}
+                  \left\{\begin{matrix}\begin{aligned}
+                          \mathbf{ii} & =\mathbf{jj}=\mathbf{kk}=-1 \\
+                          \mathbf{ij} & =-\mathbf{ji}=\mathbf{k}    \\
+                          \mathbf{jk} & =-\mathbf{kj}=\mathbf{i}    \\
+                          \mathbf{ki} & =-\mathbf{ik}=\mathbf{j}
+                      \end{aligned}
+                  \end{matrix}\right.
+              \end{equation*}
+              所导致的
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{四元数代数运算规则}
+    \begin{itemize}
+        \small
+        \item \textbf{共轭(四元共轭)}:与四元数$A=a_0+\mathbf{a}$对应的另一个四元数
+              \begin{align*}
+                  \widetilde{A} = a_0 - \mathbf{a}
+              \end{align*}
+              称为A的\textbf{四元共轭}，反之，A也称为$\widetilde{A}$的\textbf{四元共轭}
+
+              此外，由
+              \begin{align*}
+                  \begin{split}
+                      \widetilde{AB}             & =a_0b_0-\mathbf{a}\cdot\mathbf{b}-a_0\mathbf{b}-b_0\mathbf{a}-\mathbf{a}\times\mathbf{b} \\
+                      \widetilde{B}\widetilde{A} & =\left(b_0-\mathbf{b}\right)\left(a_0-\mathbf{a}\right)                                  \\
+                                                 & =a_0b_0-\mathbf{a}\cdot\mathbf{b}-a_0\mathbf{b}-b_0\mathbf{a}+\mathbf{b}\times\mathbf{a}
+                  \end{split}
+              \end{align*}
+              可知
+              \begin{align*}
+                  \widetilde{AB}=\widetilde{B}\widetilde{A}
+              \end{align*}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Spectral Theorem}
+    \begin{itemize}
+        \item 谱定理(spectral theorem)描述了厄密特矩阵(Hermitian Matrix)
+        \item 谱分解常见有两种形式：
+              \begin{align*}
+                  M & = U \Lambda U^*  (unitary, symplectic) \\
+                  M & = U \Lambda U^T  (orthogonal)
+              \end{align*}
+        \item 这可以被视为一种坐标系变化：$M \mapsto (\Lambda, U)$
+        \item 此时可以考虑计算雅可比行列式（Jacobian）：$\left|det \frac{\partial M}{\partial\left(\Lambda, U\right)}\right|$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Spectral Decomposition}
+    \begin{itemize}
+        \item 对于厄密特矩阵(Hermitian Matrix)的谱分解来说，其形式为：$M = U \Lambda U^*$，其中$M$为厄密特矩阵，$U$为酉矩阵(unitary matrix)，$\Lambda=diag(\lambda_1, \lambda_2,\dots, \lambda_n)$
+        \item 对于辛矩阵(Symplectic Matrix)的谱分解来说，
+    \end{itemize}
+\end{frame}
+\section{A Two-Dimensional Example}
+\section{监督学习}
+\begin{frame}{监督学习}
+    \begin{itemize}
+        \item 监督学习，作为机器学习的核心范式之一，主要依赖于充分标记的数据集来训练算法。
+        \item 常见的技术：支持向量机、决策树、随机森林、朴素贝叶斯、K近邻算法、神经网络、梯度提升、线性回归、逻辑回归
+        \item 简述四种下游任务：
+              \begin{itemize}
+                  \item 文本分类
+                  \item 图像识别
+                  \item 机器翻译
+                  \item 异常检测
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{文本分类}
+    \small
+    \begin{itemize}
+        \item 文本分类是一项自动将文本文档分类到预定义类别的任务\footfullcite{joseph2015text, horecki2015natural}
+        \item 支持向量机： SVMs构建在文档类别之间的最优分隔超平面上，以分类新的未标记示例\footfullcite{khamar2013short}
+        \item k-最近邻： kNN算法根据新文档与训练集中标记示例的相似性/距离来预测类别\footfullcite{tin1999automated, rennie2001improving}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{图像识别}
+    \begin{itemize}
+        \item 经典的特征提取与分类器方法
+        \item 卷积神经网络方法(CNN)
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{经典的特征提取与分类器方法}
+    \begin{itemize}
+        \item 在20世纪90年代之前传统的机器学习时代，主要使用允许特征工程和传统机器学习算法来进行图像识别。这一时期的研究者和工程师们需要大量依赖专业知识和领域经验,去手工设计识别各类目标所需的特征提取算法。这类特征通常针对不同图像识别任务定制,主要有SIFT\footfullcite{lowe1999object},HOG\footfullcite{1467360}等。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{卷积神经网络方法(CNN)}
+    \scriptsize
+    \begin{itemize}
+        \item AlexNet在深度学习模型中应用了比较深的8卷积层的神经���络,包含了卷积层,池化层,全连接层等模块,如图所示。这种网络结构的设计成为后续深度网络的范式。之后便发展出了更多使用多层感知机(MLP),卷积神经网络(CNN)等的模型来进行端到端的图像特征学习和分类\footfullcite{10.1145/3065386}。
+
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width=0.8\textwidth]{img/2-Image Recognition/4.jpg}
+              \end{figure}
+
+        \item AlexNet的成功启示了后续深度学习模型对于层次化特征学习的重要性，并为图像识别任务提供了一种强大的架构范例。
+              % \footfullcite{simonyan2014very}。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{卷积神经网络方法(CNN)}
+    \scriptsize
+    \begin{itemize}
+        \item GoogLeNet在图像识别中采用了独特的Inception模块以及一系列创新性的设计，其处理过程充分利用了多尺度特征的丰富性。总体而言，GoogLeNet是一种注重了模型的深度、宽度和计算效率的模型\footfullcite{szegedy2015going}。
+
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width=0.8\textwidth]{img/2-Image Recognition/5.jpg}
+              \end{figure}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{机器翻译}
+    \begin{itemize}
+        \item 基于规则的机器翻译（RBMT）
+        \item 统计机器翻译（SMT）
+        \item 神经机器翻译（NMT）
+        \item ���度强化学习机器翻译（DRLMT）
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{基于规则的机器翻译（RBMT）}
+    \begin{itemize}
+        \item RBMT是早期机器翻译方法之一，它的发展可以追溯到20世纪60年代和70年代。如Fakhrahmad等人\footfullcite{fakhrahmad2012new}于2012年针对词义消歧（WSD）这一机器翻译过程中最具挑战性的���务，提��各种监督和无监督学习方法来解决这一问题。近年最新的研究包括Chauhan等人\footfullcite{chauhan2023rule}提出的基于规则的模糊计算方法在印地语机器翻译中的自监督情感极性分类和词义消歧方面的应用
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{统计机器翻译（SMT）}
+    \begin{itemize}
+        \item 基于监督学习的统计机器翻译（SMT）是一种传统的机器翻译方法，它使用大量的双语平行语料来训练模型，包括源语言和目标语言之间的句子对。
+        \item González-Rubio等人\footfullcite{gonzalez2014cost}提出了一个用于计算机辅助翻译的成本敏感主动学习框架，其目标是使翻译过程尽可能轻松。与传统的主动学习场景不同，该论文所提出的主动学习框架的设计不仅是为了最小化用户必须监督的翻译数量，还包括最小化每个翻译的监督难度。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{神经机器翻译（NMT）}
+    \scriptsize
+    \begin{itemize}
+        \item 开发低资源语言翻译技术至关重要，已经成为神经机器翻译中的一个热门研究领域。shi等人\footfullcite{shi2022low}在2022发表的一篇综述类论文中对低资源NMT中现有的深度学习技术进行了全面的回顾，展示了研究现状及一些广泛使用的低资源数据集，并将这些方法分解为七个类别以总结不同方法之间的共同特点
+        \item 神经机器翻译在过去几年中取得了显著的进展，已成为机器翻译领域的主流方法，但近年更具突破性模型是监督学习下的SMT与NMT结合，Razaq等人的研究\footfullcite{razaq2023improving}展示了这一成果，其研究背景为在短语生成（PG）中，自然语言中的句子被转换成一个具有不同句法结构但具有相同语义的新句子。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{异常检测}
+    \begin{itemize}
+        \item 传统监督学习方法
+        \item 深度学习方法
+        \item 应用领域
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{传统监督学习方法}
+    \begin{itemize}
+        \item 早在2009年，Babenko等人提出了一种基于“多实例学习（Multiple Instance Learning, MIL）”的方法，该方法具有潜力应用于异常检测任务\footfullcite{5206737}
+        \item Babenko等人的研究提出了一种具有实时性能的多实例学习算法，用于目标跟踪\footfullcite{5206737}。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{深度学习方法}
+    \begin{itemize}
+        \item 一项名为"Deep Learning Anomaly Detection Method in Textual Data"的研究，由Amir Jafari于2022年提出，探讨了如何结合深度学习和传统机器学习算法来检测和识别文本中的异常\footfullcite{jafari2022deep}。该研究利用深度学习模型和Transformer架构，将文本数据转化为数值表示，提供了关于文本数据的关键上下文信息。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{应用领域}
+    \scriptsize
+    \begin{itemize}
+        \item 在2017年举行的KDD Workshop on Anomaly Detection in Finance中，研究人员和从业者���集在一起，讨论了这些新方法和解决方案\footfullcite{DBLP:conf/kdd/AnandakrishnanK17}。
+        \item 一篇题为"Deep Learning based pipeline for anomaly detection and quality enhancement in industrial binder jetting processes"的研究��由Alexander Zeiser等人于2022年提��，探讨了在工��制造��使用深度学习进行异�����检测和质量提升的方���\footfullcite{zeiser2022deep}。
+        \item 一篇题���"Cybersecurity Vital Signs: The Role of Anomaly Detection on Insider Threat Triage"的研究，由Karla Clarke和Yair Levy�����2019年提��，探讨���异常检测在��部威胁检��中的重要作用\footfullcite{Clarke2019CybersecurityVS}。
+        \item 一项名为"Medical Healthcare System Based on Wireless Body Area Networks: The Importance of Anomaly Detection"������，由Hayder Hassaballah、Rashid Fayadh和Bushra AlHayali于2020年提出���旨在��讨在医疗WBSN系统中������用�����检测的现代框架\footfullcite{Medical_Healthcare}�������
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thanks!}
+    \end{center}
+\end{frame}
+
+\end{document}

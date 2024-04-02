@@ -76,6 +76,133 @@
       \field{title}{Introduction to linear algebra (fifth edition)}
       \field{year}{2016}
     \endentry
+    \entry{许方官2012四元数物理学}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c471cd1fc5a14453745c271676217bc3}{%
+           family={许方官},
+           familyi={许\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {北京大学出版社}%
+      }
+      \strng{namehash}{c471cd1fc5a14453745c271676217bc3}
+      \strng{fullhash}{c471cd1fc5a14453745c271676217bc3}
+      \strng{bibnamehash}{c471cd1fc5a14453745c271676217bc3}
+      \strng{authorbibnamehash}{c471cd1fc5a14453745c271676217bc3}
+      \strng{authornamehash}{c471cd1fc5a14453745c271676217bc3}
+      \strng{authorfullhash}{c471cd1fc5a14453745c271676217bc3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{四元数物理学}
+      \field{year}{2012}
+    \endentry
+    \entry{deavours1973quaternion}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ccd5da55669f56f02926a92c3bb327d7}{%
+           family={Deavours},
+           familyi={D\bibinitperiod},
+           given={Cipher\bibnamedelima A},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{ccd5da55669f56f02926a92c3bb327d7}
+      \strng{fullhash}{ccd5da55669f56f02926a92c3bb327d7}
+      \strng{bibnamehash}{ccd5da55669f56f02926a92c3bb327d7}
+      \strng{authorbibnamehash}{ccd5da55669f56f02926a92c3bb327d7}
+      \strng{authornamehash}{ccd5da55669f56f02926a92c3bb327d7}
+      \strng{authorfullhash}{ccd5da55669f56f02926a92c3bb327d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{9}
+      \field{title}{The quaternion calculus}
+      \field{volume}{80}
+      \field{year}{1973}
+      \field{pages}{995\bibrangedash 1008}
+      \range{pages}{14}
+    \endentry
+    \entry{hamilton1866elements}{book}{}
+      \name{author}{1}{}{%
+        {{hash=669f29d983faa7a666a11ac2f96d3d92}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima Rowan},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {London: Longmans, Green, \& Company}%
+      }
+      \strng{namehash}{669f29d983faa7a666a11ac2f96d3d92}
+      \strng{fullhash}{669f29d983faa7a666a11ac2f96d3d92}
+      \strng{bibnamehash}{669f29d983faa7a666a11ac2f96d3d92}
+      \strng{authorbibnamehash}{669f29d983faa7a666a11ac2f96d3d92}
+      \strng{authornamehash}{669f29d983faa7a666a11ac2f96d3d92}
+      \strng{authorfullhash}{669f29d983faa7a666a11ac2f96d3d92}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elements of quaternions}
+      \field{year}{1866}
+    \endentry
+    \entry{chevalley1946theory}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=575ccf9e35b144a5693aea47d14f1bae}{%
+           family={Chevalley},
+           familyi={C\bibinitperiod},
+           given={Claude},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{575ccf9e35b144a5693aea47d14f1bae}
+      \strng{fullhash}{575ccf9e35b144a5693aea47d14f1bae}
+      \strng{bibnamehash}{575ccf9e35b144a5693aea47d14f1bae}
+      \strng{authorbibnamehash}{575ccf9e35b144a5693aea47d14f1bae}
+      \strng{authornamehash}{575ccf9e35b144a5693aea47d14f1bae}
+      \strng{authorfullhash}{575ccf9e35b144a5693aea47d14f1bae}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theory of Lie Groups (PMS-8)}
+      \field{year}{1946}
+    \endentry
+    \entry{zhang1997quaternions}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0ad0099761608ec1140a7d2da6ff501f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fuzhen},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0ad0099761608ec1140a7d2da6ff501f}
+      \strng{fullhash}{0ad0099761608ec1140a7d2da6ff501f}
+      \strng{bibnamehash}{0ad0099761608ec1140a7d2da6ff501f}
+      \strng{authorbibnamehash}{0ad0099761608ec1140a7d2da6ff501f}
+      \strng{authornamehash}{0ad0099761608ec1140a7d2da6ff501f}
+      \strng{authorfullhash}{0ad0099761608ec1140a7d2da6ff501f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Linear algebra and its applications}
+      \field{title}{Quaternions and matrices of quaternions}
+      \field{volume}{251}
+      \field{year}{1997}
+      \field{pages}{21\bibrangedash 57}
+      \range{pages}{37}
+    \endentry
     \entry{joseph2015text}{article}{}
       \name{author}{2}{}{%
         {{hash=f944d040b2c492f84da11beb82196e03}{%
@@ -95,8 +222,8 @@
       \strng{authorbibnamehash}{36ab71931e48b94c6ff4a02747f61ea4}
       \strng{authornamehash}{36ab71931e48b94c6ff4a02747f61ea4}
       \strng{authorfullhash}{36ab71931e48b94c6ff4a02747f61ea4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Int J Trends Eng Technol}
@@ -128,8 +255,8 @@
       \strng{authorbibnamehash}{4398a4ee6080e5df33efdacb9bab2def}
       \strng{authornamehash}{4398a4ee6080e5df33efdacb9bab2def}
       \strng{authorfullhash}{4398a4ee6080e5df33efdacb9bab2def}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Artificial Intelligence and Soft Computing}
@@ -152,8 +279,8 @@
       \strng{authorbibnamehash}{840b19066458a44c97a4b7a5c5fd44fc}
       \strng{authornamehash}{840b19066458a44c97a4b7a5c5fd44fc}
       \strng{authorfullhash}{840b19066458a44c97a4b7a5c5fd44fc}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of advanced research in computer and communication engineering}
@@ -178,8 +305,8 @@
       \strng{authorbibnamehash}{79b2edae2c1f138296cac99e0ab25396}
       \strng{authornamehash}{79b2edae2c1f138296cac99e0ab25396}
       \strng{authorfullhash}{79b2edae2c1f138296cac99e0ab25396}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. the International Conference on Neural Information Processing}
@@ -207,8 +334,8 @@
       \strng{authorbibnamehash}{baa0b21391755861029df55ff4c7870c}
       \strng{authornamehash}{baa0b21391755861029df55ff4c7870c}
       \strng{authorfullhash}{baa0b21391755861029df55ff4c7870c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Improving multiclass text classification with the support vector machine}
@@ -231,8 +358,8 @@
       \strng{authorbibnamehash}{83f4643381c1cc2c483b4210498fedb0}
       \strng{authornamehash}{83f4643381c1cc2c483b4210498fedb0}
       \strng{authorfullhash}{83f4643381c1cc2c483b4210498fedb0}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the seventh IEEE international conference on computer vision}
@@ -261,8 +388,8 @@
       \strng{authorbibnamehash}{8316a8a4748fedae6ff9c5414cecc95a}
       \strng{authornamehash}{8316a8a4748fedae6ff9c5414cecc95a}
       \strng{authorfullhash}{8316a8a4748fedae6ff9c5414cecc95a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}
@@ -305,8 +432,8 @@
       \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authornamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0001-0782}
@@ -565,8 +692,8 @@
       \strng{authorbibnamehash}{df7ba772bb5f01ada4dc0c1624a01a73}
       \strng{authornamehash}{df7ba772bb5f01ada4dc0c1624a01a73}
       \strng{authorfullhash}{ad9253e467a7bc251cef6ed693de4790}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Transactions on Asian and Low-Resource Language Information Processing}
@@ -624,8 +751,8 @@
       \strng{authorbibnamehash}{bd38a916acc1770d34903ab13a1fe910}
       \strng{authornamehash}{bd38a916acc1770d34903ab13a1fe910}
       \strng{authorfullhash}{21571e2cfe7e84556b9cd1b261438e75}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural Computing and Applications}
@@ -658,8 +785,8 @@
       \strng{authorbibnamehash}{c939b58dbb02dc949c3e7f17e45e54c7}
       \strng{authornamehash}{c939b58dbb02dc949c3e7f17e45e54c7}
       \strng{authorfullhash}{c939b58dbb02dc949c3e7f17e45e54c7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we address the problem of learning an adaptive appearance model for object tracking. In particular, a class of tracking techniques called “tracking by detection” have been shown to give promising results at real-time speeds. These methods train a discriminative classifier in an online manner to separate the object from the background. This classifier bootstraps itself by using the current tracker state to extract positive and negative examples from the current frame. Slight inaccuracies in the tracker can therefore lead to incorrectly labeled training examples, which degrades the classifier and can cause further drift. In this paper we show that using Multiple Instance Learning (MIL) instead of traditional supervised learning avoids these problems, and can therefore lead to a more robust tracker with fewer parameter tweaks. We present a novel online MIL algorithm for object tracking that achieves superior results with real-time performance.}
@@ -688,8 +815,8 @@
       \strng{authorbibnamehash}{914d7006e876759832516ff877a9e1bb}
       \strng{authornamehash}{914d7006e876759832516ff877a9e1bb}
       \strng{authorfullhash}{914d7006e876759832516ff877a9e1bb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this article, we propose using deep learning and transformer architectures combined with classical machine learning algorithms to detect and identify text anomalies in texts. Deep learning model provides a very crucial context information about the textual data which all textual context are converted to a numerical representation. We used multiple machine learning methods such as Sentence Transformers, Auto Encoders, Logistic Regression and Distance calculation methods to predict anomalies. The method are tested on the texts data and we used syntactic data from different source injected into the original text as anomalies or use them as target. Different methods and algorithm are explained in the field of outlier detection and the results of the best technique is presented. These results suggest that our algorithm could potentially reduce false positive rates compared with other anomaly detection methods that we are testing.}
@@ -768,8 +895,8 @@
       \strng{editorbibnamehash}{5bdc8405906e4dbab51a56df00ba8d63}
       \strng{editornamehash}{5bdc8405906e4dbab51a56df00ba8d63}
       \strng{editorfullhash}{1c512bf5655527cddd1222a12f585b12}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {KDD} 2017 Workshop on Anomaly Detection in Finance, ADF@KDD 2017, Halifax, Nova Scotia, Canada, August 14, 2017}
