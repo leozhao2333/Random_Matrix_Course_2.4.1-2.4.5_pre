@@ -699,15 +699,6 @@ INPUT C:\Users\ZLY\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\ZLY\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\ZLY\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT C:\Users\ZLY\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt8.tfm
-INPUT .\slide.toc
-INPUT .\slide.toc
-INPUT slide.toc
-INPUT .\img\2-Image Recognition\4.jpg
-INPUT .\img\2-Image Recognition\4.jpg
-INPUT .\img\2-Image Recognition\4.jpg
-INPUT .\img\2-Image Recognition\5.jpg
-INPUT .\img\2-Image Recognition\5.jpg
-INPUT .\img\2-Image Recognition\5.jpg
 INPUT C:\Users\ZLY\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmss17.tfm
 INPUT C:\Users\ZLY\AppData\Local\MiKTeX\fonts\tfm\public\calligra\callig15.tfm
 OUTPUT slide.nav

@@ -2374,27 +2374,6 @@
     <bcf:citekey order="8" intorder="1">chevalley1946theory</bcf:citekey>
     <bcf:citekey order="9" intorder="1">zhang1997quaternions</bcf:citekey>
     <bcf:citekey order="10" intorder="1">howard2012diagonalization</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">joseph2015text</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">horecki2015natural</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">khamar2013short</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">tin1999automated</bcf:citekey>
-    <bcf:citekey order="13" intorder="2">rennie2001improving</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">lowe1999object</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">1467360</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">10.1145/3065386</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">szegedy2015going</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">fakhrahmad2012new</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">chauhan2023rule</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">gonzalez2014cost</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">shi2022low</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">razaq2023improving</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">5206737</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">5206737</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">jafari2022deep</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">DBLP:conf/kdd/AnandakrishnanK17</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">zeiser2022deep</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Clarke2019CybersecurityVS</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Medical_Healthcare</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
