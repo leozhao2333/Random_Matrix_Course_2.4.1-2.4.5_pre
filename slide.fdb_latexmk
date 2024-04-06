@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber slide"] 1712065582.43074 "slide.bcf" "slide.bbl" "slide" 1712065924.87101 0
-  "ref.bib" 1712065556 62842 7334ec24f14fc38c77704688be226e7c ""
-  "slide.bcf" 1712065924 108925 338b2586065103721444ca4d4d65ebc8 "xelatex"
+["biber slide"] 1712373181.98524 "slide.bcf" "slide.bbl" "slide" 1712381329.65227 0
+  "ref.bib" 1712373017 63066 7788b79d655a6ff9b1a3e1156446106f ""
+  "slide.bcf" 1712381328 109006 8df42d0a354d6edf90182aa4ece3ef20 "xelatex"
   (generated)
   "slide.bbl"
   "slide.blg"
   (rewritten before read)
-["xdvipdfmx"] 1712065924.46074 "slide.xdv" "slide.pdf" "slide" 1712065924.88066 0
-  "slide.xdv" 1712065924 1131864 5d5cdcd1ed65a5ecbac0fe0a376e9824 "xelatex"
+["xdvipdfmx"] 1712381329.0964 "slide.xdv" "slide.pdf" "slide" 1712381329.66578 0
+  "slide.xdv" 1712381328 1252100 0ec0a31b3cddea5dda3981d259013098 "xelatex"
   (generated)
   "slide.pdf"
   (rewritten before read)
-["xelatex"] 1712065917.70385 "d:/code/2.4.1&2.4.5_pre/slide.tex" "slide.xdv" "slide" 1712065924.87117 0
+["xelatex"] 1712381319.95306 "d:/code/2.4.1&2.4.5_pre/slide.tex" "slide.xdv" "slide" 1712381329.65248 0
   "C:/Users/ZLY/AppData/Local/MiKTeX/fonts/tfm/public/calligra/callig15.tfm" 1711336926 1764 b825de14b77999deb4f4ada360048a54 ""
   "C:/Users/ZLY/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1711336823 37558204 5b7fb31de7228fa99119c9a6635b962d ""
   "C:/Users/ZLY/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136743454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -368,18 +368,18 @@
   "C:/Users/ZLY/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
   "C:/Users/ZLY/AppData/Local/Programs/MiKTeX/tex/xelatex/xetex-pstricks/pstricks.con" 1266284760 204 366747485ba2670f55166e66d1f21249 ""
   "C:/Windows/Fonts/msyh.ttc" 1688478513 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "d:/code/2.4.1&2.4.5_pre/slide.tex" 1712065911 26430 9f6a9e48f20874826032b9dcf1e8ac0f ""
+  "d:/code/2.4.1&2.4.5_pre/slide.tex" 1712381319 29859 74f170813a345c909e1073a58655e6ce ""
   "hdu.sty" 1711306024 3535 73bf257a48aa18fc3aa5a8edfe6fd852 ""
   "img/2-Image Recognition/4.jpg" 1711306028 77799 06c1b9cb32330462ef9baad4466a75fb ""
   "img/2-Image Recognition/5.jpg" 1711306028 108825 ba93d43a956ca3cba39e7f719f1dc6dc ""
   "img/hdu-logo.jpg" 1711306024 374034 ba01a873a0b24536ab9a42e654dd7180 ""
-  "slide.aux" 1712065924 9199 1694a11475201c21cff7ba90827c83cd "xelatex"
-  "slide.bbl" 1712065584 47766 9a7281638f6a10c1bc2630e7a2c0cc3f "biber slide"
-  "slide.nav" 1712065924 3735 eb130572a61fd9375558caac70b23b82 "xelatex"
-  "slide.out" 1712065924 342 e667fed416c3b6829467e3bead89e0a5 "xelatex"
-  "slide.run.xml" 1712065924 2381 7790ec0c6d3f4099e05fa8c841a36369 "xelatex"
-  "slide.tex" 1712065911 26430 9f6a9e48f20874826032b9dcf1e8ac0f ""
-  "slide.toc" 1712065924 157 8292c9d5ef5612ecb2ccafa398996474 "xelatex"
+  "slide.aux" 1712381328 9630 b65d30b2fdc3f689d132af3988cc3ef3 "xelatex"
+  "slide.bbl" 1712373184 48901 875e941c7703d1f8d0f81af1ba0f4930 "biber slide"
+  "slide.nav" 1712381328 3919 ef89887afbb99c37758e36c58a2de198 "xelatex"
+  "slide.out" 1712381328 342 e667fed416c3b6829467e3bead89e0a5 "xelatex"
+  "slide.run.xml" 1712381328 2381 7790ec0c6d3f4099e05fa8c841a36369 "xelatex"
+  "slide.tex" 1712381319 29859 74f170813a345c909e1073a58655e6ce ""
+  "slide.toc" 1712381328 157 3b77d8621c38483be0e7bb360df2c114 "xelatex"
   (generated)
   "slide.aux"
   "slide.bcf"

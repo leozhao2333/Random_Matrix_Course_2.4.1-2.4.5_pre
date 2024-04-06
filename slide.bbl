@@ -203,6 +203,33 @@
       \field{pages}{21\bibrangedash 57}
       \range{pages}{37}
     \endentry
+    \entry{howard2012diagonalization}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a0abaedad17310c8cd72d519aa1b5d82}{%
+           family={Haber},
+           familyi={H\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \strng{fullhash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \strng{bibnamehash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \strng{authorbibnamehash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \strng{authornamehash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \strng{authorfullhash}{a0abaedad17310c8cd72d519aa1b5d82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(2012)}
+      \field{title}{{Diagonalization of a general $2 \times 2$ hermitian matrix}}
+      \verb{urlraw}
+      \verb https://scipp.ucsc.edu/~haber/ph216/diag22new.pdf
+      \endverb
+      \verb{url}
+      \verb https://scipp.ucsc.edu/~haber/ph216/diag22new.pdf
+      \endverb
+    \endentry
     \entry{joseph2015text}{article}{}
       \name{author}{2}{}{%
         {{hash=f944d040b2c492f84da11beb82196e03}{%
@@ -649,8 +676,8 @@
       \strng{authorbibnamehash}{2ec17e11d0881d2813618ccdb54159f5}
       \strng{authornamehash}{2ec17e11d0881d2813618ccdb54159f5}
       \strng{authorfullhash}{2ec17e11d0881d2813618ccdb54159f5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Pattern Recognition Letters}

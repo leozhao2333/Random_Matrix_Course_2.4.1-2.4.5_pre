@@ -324,9 +324,9 @@ arc=1mm,
         \item
               \begin{align*}
                   \begin{split}
-                      a & =\lambda_{1}\cos^{2}\theta+\lambda_{2}\sin^{2}\theta \\
-                      b & =(\lambda_1-\lambda_2)\cos\theta\sin\theta           \\
-                      c & =\lambda_{1}\sin^{2}\theta+\lambda_{2}\cos^{2}\theta
+                      a=\lambda_{1}\cos^{2}\theta+\lambda_{2}\sin^{2}\theta \\
+                      b=(\lambda_1-\lambda_2)\cos\theta\sin\theta           \\
+                      c=\lambda_{1}\sin^{2}\theta+\lambda_{2}\cos^{2}\theta
                   \end{split}
               \end{align*}
         \item
@@ -339,31 +339,16 @@ arc=1mm,
 \begin{frame}{$2\times 2$ Real Symmetric Matrix}
     \begin{itemize}
         \scriptsize
-        \item Since
+        \item
               \begin{align*}
                   \frac{\partial(a,b,c)}{\partial(\lambda_1,\lambda_2,\theta)}=\begin{bmatrix}\cos^2\theta&\sin^2\theta&-2(\lambda_1-\lambda_2)\cos\theta\sin\theta\\\cos\theta\sin\theta&-\cos\theta\sin\theta&(\lambda_1-\lambda_2)(\cos^2\theta-\sin^2\theta)\\\sin^2\theta&\cos^2\theta&2(\lambda_1-\lambda_2)\cos\theta\sin\theta\end{bmatrix}.
               \end{align*}
-        \item The determinant can be:
+        \item
               \begin{align*}
                   \left|\det\frac{\partial(a,b,c)}{\partial(\lambda_1,\lambda_2,\theta)}\right|=|\lambda_1-\lambda_2|f_1(\theta)
               \end{align*}
               where \begin{align*}
                   \left.f_1(\theta)=\left|\det\begin{bmatrix}\cos^2\theta&\sin^2\theta&-2\sin2\theta\\\frac12\sin2\theta&-\frac12\sin2\theta&\cos2\theta\\\sin^2\theta&\cos^2\theta&\sin2\theta\end{bmatrix}\right.\right|=1>0
-              \end{align*}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{$2\times 2$ Hermitian Matrix}
-    \begin{itemize}
-        \scriptsize
-        \item Consider a $2\times 2$ real symmetric matrix $M=\begin{bmatrix}a & b+ci \\b-ci & d\end{bmatrix}$with distinct eigenvalues $\lambda_1\neq\lambda_2$. Then $M=U\begin{bmatrix}\lambda_1&0\\0&\lambda_2\end{bmatrix}U^*$, and without loss of generality we can assume $U=\begin{bmatrix}\cos\theta & \left(\cos\chi+i\sin\chi\right)\sin\theta\\ \left(-\cos\chi-i\sin\chi\right)\sin\theta & \cos\theta\end{bmatrix}$ for some $0\leq\theta\leq\frac12\pi$ and $\quad0\leq\chi<2\pi$.\footfullcite{howard2012diagonalization}
-        \item \begin{align*}
-                  \begin{split}
-                      a & =\lambda_1\cos^2\theta+\lambda_2\sin^2\theta                  \\
-                      b & =\left(\lambda_1-\lambda_2\right)\cos\chi\sin\theta\cos\theta \\
-                      c & =\left(\lambda_1+\lambda_2\right)\sin\chi\sin\theta\cos\theta \\
-                      d & =\lambda_{1}\sin^{2}\theta+\lambda_{2}\cos^{2}\theta
-                  \end{split}
               \end{align*}
     \end{itemize}
 \end{frame}
@@ -489,7 +474,7 @@ arc=1mm,
     \begin{itemize}
         \item 在2017年举行的KDD Workshop on Anomaly Detection in Finance中，研究人员和从业者���集在一起，讨论了这些新方法和解决方案\footfullcite{DBLP:conf/kdd/AnandakrishnanK17}。
         \item 一篇题为"Deep Learning based pipeline for anomaly detection and quality enhancement in industrial binder jetting processes"的研究��由Alexander Zeiser等人于2022年提��，探讨了在工���制������用深度学习进行异�������检测和质量提升的方���\footfullcite{zeiser2022deep}。
-        \item 一篇题���"Cybersecurity Vital Signs: The Role of Anomaly Detection on Insider Threat Triage"的研究��由Karla Clarke和Yair Levy�������2019年�������，探讨�������异常检测在�������威胁������中�����������要作用\footfullcite{Clarke2019CybersecurityVS}。
+        \item 一篇题���"Cybersecurity Vital Signs: The Role of Anomaly Detection on Insider Threat Triage"的研究��由Karla Clarke和Yair Levy�������2019年�������，探讨���异常检测在��部威胁检��中����������要作用\footfullcite{Clarke2019CybersecurityVS}。
         \item 一项名为"Medical Healthcare System Based on Wireless Body Area Networks: The Importance of Anomaly Detection"������，由Hayder Hassaballah、Rashid Fayadh和Bushra AlHayali于2020年提出������在�����在医疗WBSN���统中�������用�����检测的现代��架\footfullcite{Medical_Healthcare}�������
     \end{itemize}
 \end{frame}
