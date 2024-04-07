@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{Background}{3}{0}{1}
-\beamer@sectionintoc {2}{A Two-Dimensional Example}{16}{0}{2}
